@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Base styles */
+html {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid #8b4513;
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Smooth scrolling */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom styles for restaurant */
+.hero-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&h=1080&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #a0522d, transparent);
+}

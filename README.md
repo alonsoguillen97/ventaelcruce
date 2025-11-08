@@ -1,43 +1,87 @@
-# Astro Starter Kit: Minimal
+# Venta El Faisán - Web del Restaurante
 
-```sh
-npm create astro@latest -- --template minimal
+Sitio web para el restaurante "Venta El Faisán" construido con Astro y Tailwind CSS.
+
+## 🍽️ Características del Restaurante
+
+- ✅ **Astro** con TypeScript estricto
+- ✅ **Tailwind CSS** con paleta de colores gastronómica
+- ✅ **Responsive design** (mobile-first)
+- ✅ **Accesibilidad** (WCAG AA)
+- ✅ **Performance optimizado**
+- ✅ **SEO básico** configurado
+
+## 🏗️ Secciones incluidas
+
+- **Header** - Navegación sticky con modo oscuro
+- **Hero** - Sección principal con gradientes
+- **Features** - 3 características principales
+- **Testimonials** - 3 testimonios de clientes
+- **Pricing** - 3 planes de precios
+- **CTA** - Llamada a la acción
+- **Footer** - Enlaces y información
+
+## 🛠️ Herramientas de desarrollo
+
+- **Prettier** - Formateo de código
+- **ESLint** - Linting para TypeScript y Astro
+- **EditorConfig** - Configuración de editor
+- **VSCode settings** - Configuración optimizada
+
+## 🏃‍♂️ Ejecución
+
+### Desarrollo
+```bash
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Abre [http://localhost:4321](http://localhost:4321) en tu navegador.
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+### Producción
+```bash
+npm run build
+npm run preview
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 📝 Scripts disponibles
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- `npm run dev` - Servidor de desarrollo
+- `npm run build` - Construir para producción
+- `npm run preview` - Previsualizar build de producción
+- `npm run lint` - Ejecutar ESLint
+- `npm run lint:fix` - Corregir errores de ESLint
+- `npm run format` - Formatear código con Prettier
+- `npm run format:check` - Verificar formato
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🎨 Personalización
 
-## 🧞 Commands
+### Colores
+Edita `tailwind.config.js` para cambiar la paleta de colores.
 
-All commands are run from the root of the project, from a terminal:
+### Contenido
+- **Testimonios**: Edita directamente en `src/pages/index.astro`
+- **Precios**: Modifica los planes en la sección pricing
+- **Features**: Cambia los iconos y textos en la sección features
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### Imágenes
+Las imágenes de testimonios están usando Unsplash. Para producción, reemplázalas con imágenes propias en la carpeta `public/`.
 
-## 👀 Want to learn more?
+## 🌙 Modo Oscuro
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+El modo oscuro está configurado con:
+- Detección automática del sistema
+- Toggle manual en la navegación
+- Persistencia en localStorage
+- Transiciones suaves
+
+## � Responsive
+
+Diseño mobile-first con breakpoints:
+- **mobile**: < 768px
+- **tablet**: 768px - 1023px  
+- **desktop**: ≥ 1024px
+
+---
+
+Construido con ❤️ usando [Astro](https://astro.build/) y [Tailwind CSS](https://tailwindcss.com/)
