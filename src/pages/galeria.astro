@@ -782,17 +782,6 @@ import Layout from '../layouts/Layout.astro';
   window.addEventListener('scroll', updateHeader);
   window.addEventListener('load', updateHeader);
 
-  // DEBUGGING: Forzar color verde después de 3 segundos
-  setTimeout(() => {
-    console.log('Galería: Forcing verde oliva color for debugging');
-    const header = document.getElementById('header');
-    if (header) {
-      header.classList.add('bg-verde-oliva');
-      header.style.backgroundColor = '#4a4d00';
-      header.style.setProperty('background-color', '#4a4d00', 'important');
-    }
-  }, 3000);
-
   // Add animation on scroll
   const observerOptions = {
     threshold: 0.1,
