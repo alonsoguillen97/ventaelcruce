@@ -6,51 +6,49 @@ import Layout from '../layouts/Layout.astro';
   <!-- Navigation Header -->
   <header
     id="header"
-    class="bg-transparent fixed top-0 z-50 w-full transition-all duration-500 ease-in-out pt-8"
+    class="fixed top-0 z-50 w-full bg-transparent pt-8 transition-all duration-500 ease-in-out"
   >
     <div class="mx-auto max-w-6xl px-4 py-3">
       <div class="flex items-center justify-between">
         <div class="flex items-center">
           <a href="#inicio" class="flex items-center">
-            <img
-              src="/Logo venta el cruce.png"
-              alt="Venta El Cruce - Capricho Andaluz"
-              class="h-12 w-auto transition-all duration-500 opacity-0"
-              id="logo-img"
-            />
+            <span
+              class="text-2xl font-bold text-white opacity-0 transition-all duration-500"
+              id="logo-text">Venta El Cruce</span
+            >
           </a>
         </div>
 
         <div class="hidden items-center space-x-6 md:flex">
           <a
             href="#inicio"
-            class="nav-link text-white hover:text-gold-300 border-b-2 border-transparent pb-1 text-base font-semibold tracking-wider uppercase transition-all duration-300"
+            class="nav-link hover:text-gold-300 border-b-2 border-transparent pb-1 text-base font-semibold tracking-wider text-white uppercase transition-all duration-300"
             >Inicio</a
           >
           <a
             href="#nosotros"
-            class="nav-link text-white hover:text-gold-300 border-b-2 border-transparent pb-1 text-base font-semibold tracking-wider uppercase transition-all duration-300"
+            class="nav-link hover:text-gold-300 border-b-2 border-transparent pb-1 text-base font-semibold tracking-wider text-white uppercase transition-all duration-300"
             >Nosotros</a
           >
           <a
             href="#espacios"
-            class="nav-link text-white hover:text-gold-300 border-b-2 border-transparent pb-1 text-base font-semibold tracking-wider uppercase transition-all duration-300"
+            class="nav-link hover:text-gold-300 border-b-2 border-transparent pb-1 text-base font-semibold tracking-wider text-white uppercase transition-all duration-300"
             >Espacios</a
           >
           <a
             href="#carta"
-            class="nav-link text-white hover:text-gold-300 border-b-2 border-transparent pb-1 text-base font-semibold tracking-wider uppercase transition-all duration-300"
+            class="nav-link hover:text-gold-300 border-b-2 border-transparent pb-1 text-base font-semibold tracking-wider text-white uppercase transition-all duration-300"
             >Carta</a
           >
           <a
             href="/galeria"
-            class="nav-link text-white hover:text-gold-300 border-b-2 border-transparent pb-1 text-base font-semibold tracking-wider uppercase transition-all duration-300"
+            class="nav-link hover:text-gold-300 border-b-2 border-transparent pb-1 text-base font-semibold tracking-wider text-white uppercase transition-all duration-300"
             >Galería</a
           >
 
           <a
             href="#contacto"
-            class="nav-link text-white hover:text-gold-300 border-b-2 border-transparent pb-1 text-base font-semibold tracking-wider uppercase transition-all duration-300"
+            class="nav-link hover:text-gold-300 border-b-2 border-transparent pb-1 text-base font-semibold tracking-wider text-white uppercase transition-all duration-300"
             >Visítanos</a
           >
 
@@ -60,25 +58,32 @@ import Layout from '../layouts/Layout.astro';
           <!-- Teléfono -->
           <a
             href="tel:+34956413200"
-            class="nav-contact flex items-center text-white hover:text-gold-300 transition-all duration-300"
+            class="nav-contact hover:text-gold-300 flex items-center text-white transition-all duration-300"
             title="Llamar"
           >
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              ></path>
             </svg>
             <span class="text-sm font-semibold">956 41 32 00</span>
           </a>
 
           <!-- Instagram -->
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/ventaelcruce.elcaprichoandaluz/"
             target="_blank"
             rel="noopener noreferrer"
-            class="nav-social text-white hover:text-gold-300 transition-all duration-300"
+            class="nav-social hover:text-gold-300 text-white transition-all duration-300"
             title="Instagram"
           >
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              ></path>
             </svg>
           </a>
 
@@ -87,11 +92,13 @@ import Layout from '../layouts/Layout.astro';
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="nav-social text-white hover:text-gold-300 transition-all duration-300"
+            class="nav-social hover:text-gold-300 text-white transition-all duration-300"
             title="Facebook"
           >
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+              ></path>
             </svg>
           </a>
         </div>
@@ -100,7 +107,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="md:hidden">
           <button
             id="mobile-menu-btn"
-            class="text-white hover:text-gold-300 text-3xl leading-none transition-colors duration-300"
+            class="hover:text-gold-300 text-3xl leading-none text-white transition-colors duration-300"
           >
             <span>☰</span>
           </button>
@@ -109,38 +116,38 @@ import Layout from '../layouts/Layout.astro';
         <!-- Mobile menu -->
         <div
           id="mobile-menu"
-          class="bg-black/80 hidden px-6 py-4 backdrop-blur-sm transition-all duration-300 md:hidden"
+          class="hidden bg-black/80 px-6 py-4 backdrop-blur-sm transition-all duration-300 md:hidden"
         >
           <div class="space-y-2">
             <a
               href="#inicio"
-              class="mobile-nav-link text-white hover:text-gold-300 block border-l-4 border-transparent py-3 pl-4 text-sm font-semibold tracking-wider uppercase transition-colors duration-300"
+              class="mobile-nav-link hover:text-gold-300 block border-l-4 border-transparent py-3 pl-4 text-sm font-semibold tracking-wider text-white uppercase transition-colors duration-300"
               >Inicio</a
             >
             <a
               href="#nosotros"
-              class="mobile-nav-link text-white hover:text-gold-300 block border-l-4 border-transparent py-3 pl-4 text-sm font-semibold tracking-wider uppercase transition-colors duration-300"
+              class="mobile-nav-link hover:text-gold-300 block border-l-4 border-transparent py-3 pl-4 text-sm font-semibold tracking-wider text-white uppercase transition-colors duration-300"
               >Nosotros</a
             >
             <a
               href="#espacios"
-              class="mobile-nav-link text-white hover:text-gold-300 block border-l-4 border-transparent py-3 pl-4 text-sm font-semibold tracking-wider uppercase transition-colors duration-300"
+              class="mobile-nav-link hover:text-gold-300 block border-l-4 border-transparent py-3 pl-4 text-sm font-semibold tracking-wider text-white uppercase transition-colors duration-300"
               >Espacios</a
             >
             <a
               href="#carta"
-              class="mobile-nav-link text-white hover:text-gold-300 block border-l-4 border-transparent py-3 pl-4 text-sm font-semibold tracking-wider uppercase transition-colors duration-300"
+              class="mobile-nav-link hover:text-gold-300 block border-l-4 border-transparent py-3 pl-4 text-sm font-semibold tracking-wider text-white uppercase transition-colors duration-300"
               >Carta</a
             >
             <a
               href="/galeria"
-              class="mobile-nav-link text-white hover:text-gold-300 block border-l-4 border-transparent py-3 pl-4 text-sm font-semibold tracking-wider uppercase transition-colors duration-300"
+              class="mobile-nav-link hover:text-gold-300 block border-l-4 border-transparent py-3 pl-4 text-sm font-semibold tracking-wider text-white uppercase transition-colors duration-300"
               >Galería</a
             >
 
             <a
               href="#contacto"
-              class="mobile-nav-link text-white hover:text-gold-300 block border-l-4 border-transparent py-3 pl-4 text-sm font-semibold tracking-wider uppercase transition-colors duration-300"
+              class="mobile-nav-link hover:text-gold-300 block border-l-4 border-transparent py-3 pl-4 text-sm font-semibold tracking-wider text-white uppercase transition-colors duration-300"
               >Visítanos</a
             >
           </div>
@@ -158,16 +165,25 @@ import Layout from '../layouts/Layout.astro';
       <!-- Slider Container -->
       <div class="hero-slider absolute inset-0">
         <!-- Slide 1 -->
-        <div class="hero-slide active absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1920&h=1080&fit=crop')] bg-cover bg-center">
-          <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/20"></div>
+        <div
+          class="hero-slide active absolute inset-0 bg-[url('/images/hero/slider-1.jpg')] bg-cover bg-center"
+        >
+          <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/20">
+          </div>
         </div>
         <!-- Slide 2 -->
-        <div class="hero-slide absolute inset-0 bg-[url('https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=1920&h=1080&fit=crop')] bg-cover bg-center">
-          <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/20"></div>
+        <div
+          class="hero-slide absolute inset-0 bg-[url('/images/hero/slider-2.jpg')] bg-cover bg-center"
+        >
+          <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/20">
+          </div>
         </div>
         <!-- Slide 3 -->
-        <div class="hero-slide absolute inset-0 bg-[url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&h=1080&fit=crop')] bg-cover bg-center">
-          <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/20"></div>
+        <div
+          class="hero-slide absolute inset-0 bg-[url('/images/hero/slider-3.jpg')] bg-cover bg-center"
+        >
+          <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/20">
+          </div>
         </div>
       </div>
 
@@ -184,15 +200,28 @@ import Layout from '../layouts/Layout.astro';
                 >
                   Venta El Cruce
                 </h1>
-                <div class="inline-block relative">
+                <div class="relative inline-block">
                   <p
                     class="hero-subtitle mb-2 text-2xl font-light tracking-wide italic md:text-3xl lg:text-4xl"
                     style="color: #c7c99b; font-family: 'Aleo', serif; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 0 0 15px rgba(0, 0, 0, 0.7);"
                   >
                     Que no se pierda la costumbre
                   </p>
-                  <svg class="mt-1" width="100%" height="8" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 8">
-                    <path d="M 0 4 Q 37.5 0, 75 4 T 150 4 T 225 4 T 300 4" stroke="#c7c99b" stroke-width="2" fill="none" stroke-linecap="round" style="filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.8));"/>
+                  <svg
+                    class="mt-1"
+                    width="100%"
+                    height="8"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 8"
+                  >
+                    <path
+                      d="M 0 4 Q 37.5 0, 75 4 T 150 4 T 225 4 T 300 4"
+                      stroke="#c7c99b"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      style="filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.8));"></path>
                   </svg>
                 </div>
               </div>
@@ -200,15 +229,15 @@ import Layout from '../layouts/Layout.astro';
           </div>
 
           <!-- Logo y botón en la parte inferior -->
-          <div class="hero-footer mt-12 flex items-end justify-between px-6 lg:mt-0 lg:px-0">
+          <div class="hero-footer mt-12 flex flex-col gap-4 items-center px-4 sm:flex-row sm:items-end sm:justify-between sm:px-6 lg:mt-0 lg:px-0">
             <img
               src="/Logo venta el cruce.png"
               alt="Capricho Andaluz - Venta El Cruce"
-              class="hero-logo h-20 w-auto md:h-22 lg:h-24"
+              class="hero-logo h-16 w-auto sm:h-20 md:h-22 lg:h-24"
             />
             <a
               href="#carta"
-              class="hero-button bg-gold-500 hover:bg-gold-400 border-gold-500 hover:border-gold-400 rounded-sm border-2 px-8 py-3 text-sm font-semibold tracking-wider text-white uppercase shadow-xl transition-all duration-300 hover:scale-105 hover:text-white md:px-10 md:py-4 md:text-base"
+              class="hero-button bg-gold-500 hover:bg-gold-400 border-gold-500 hover:border-gold-400 rounded-sm border-2 px-6 py-2.5 text-xs font-semibold tracking-wider text-white uppercase shadow-xl transition-all duration-300 hover:scale-105 hover:text-white sm:px-8 sm:py-3 sm:text-sm md:px-10 md:py-4 md:text-base whitespace-nowrap"
             >
               Descubrir Carta
             </a>
@@ -218,9 +247,15 @@ import Layout from '../layouts/Layout.astro';
 
       <!-- Slider Navigation -->
       <div class="absolute bottom-8 left-1/2 z-20 flex -translate-x-1/2 space-x-3">
-        <button class="slider-dot h-3 w-3 rounded-full bg-white/50 transition-all duration-300 hover:bg-white/80" data-slide="0"></button>
-        <button class="slider-dot h-3 w-3 rounded-full bg-white/50 transition-all duration-300 hover:bg-white/80" data-slide="1"></button>
-        <button class="slider-dot h-3 w-3 rounded-full bg-white/50 transition-all duration-300 hover:bg-white/80" data-slide="2"></button>
+        <button
+          class="slider-dot h-3 w-3 rounded-full bg-white/50 transition-all duration-300 hover:bg-white/80"
+          data-slide="0"></button>
+        <button
+          class="slider-dot h-3 w-3 rounded-full bg-white/50 transition-all duration-300 hover:bg-white/80"
+          data-slide="1"></button>
+        <button
+          class="slider-dot h-3 w-3 rounded-full bg-white/50 transition-all duration-300 hover:bg-white/80"
+          data-slide="2"></button>
       </div>
     </section>
 
@@ -228,35 +263,38 @@ import Layout from '../layouts/Layout.astro';
     <section class="py-20" style="background: linear-gradient(135deg, #ffffff 0%, #faf8f5 100%);">
       <div class="mx-auto max-w-4xl px-6 text-center">
         <div class="mb-6">
-          <div class="mx-auto h-1 w-20 bg-gradient-to-r from-transparent via-gold-500 to-transparent mb-6"></div>
+          <div
+            class="via-gold-500 mx-auto mb-6 h-1 w-20 bg-gradient-to-r from-transparent to-transparent"
+          >
+          </div>
         </div>
-        <h2 class="font-elegant text-navy-900 mb-10 text-4xl font-bold lg:text-5xl tracking-tight">
-          VENTA EL <span style="color: #4a4d00;">CRUCE</span>
+        <h2 class="font-elegant text-navy-900 mb-10 text-4xl font-bold tracking-tight lg:text-5xl">
+          Venta <span style="color: #4a4d00;">El Cruce</span>
         </h2>
         <div class="space-y-6 text-lg leading-relaxed text-gray-700">
           <p>
-            En la <strong style="color: #c7c99b;">Venta El Cruce</strong> le hacemos un homenaje a
-            <strong style="color: #c7c99b;">El Capricho Andaluz</strong>… Ese buen café calentito
+            En la <strong style="color: #4a4d00;">Venta El Cruce</strong> le hacemos un homenaje a
+            <strong style="color: #4a4d00;">El Capricho Andaluz</strong>… Ese buen café calentito
             acompañado de un buen desayuno para comenzar el día, con el aroma del pan recién tostado
             y el sabor auténtico de nuestra tierra.
           </p>
           <p>
             En la Venta el Cruce te abrimos las puertas a un rincón donde la
-            <strong style="color: #c7c99b;">tradición y el sabor</strong> se encuentran. Nuestra venta
+            <strong style="color: #4a4d00;">tradición y el sabor</strong> se encuentran. Nuestra venta
             acoge tanto a quienes van de paso como a quienes deciden quedarse y volver una y otra vez,
             atraídos por el sabor y olor de nuestros
-            <strong style="color: #c7c99b;">desayunos y comida casera</strong>.
+            <strong style="color: #4a4d00;">desayunos y comida casera</strong>.
           </p>
           <p>
-            Aquí podrás disfrutar de <strong style="color: #c7c99b;"
+            Aquí podrás disfrutar de <strong style="color: #4a4d00;"
               >productos ibéricos de la zona</strong
-            >, seleccionados con mimo, y de <strong style="color: #c7c99b;">guisos caseros</strong> elaborados
+            >, seleccionados con mimo, y de <strong style="color: #4a4d00;">guisos caseros</strong> elaborados
             siguiendo las recetas de siempre, esas que huelen a hogar y a campo andaluz.
           </p>
           <p>
-            Ven a disfrutar de un <strong style="color: #c7c99b;">ambiente familiar</strong>, donde
+            Ven a disfrutar de un <strong style="color: #4a4d00;">ambiente familiar</strong>, donde
             cada plato cuenta una historia y cada visita deja un recuerdo. Porque en <strong
-              style="color: #c7c99b;">El Capricho Andaluz</strong
+              style="color: #4a4d00;">El Capricho Andaluz</strong
             >, más que comer… se vive Andalucía.
           </p>
         </div>
@@ -264,18 +302,27 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- About Section - Alternating Background -->
-    <section id="nosotros" class="relative py-28" style="background: linear-gradient(to bottom, #faf8f5 0%, #f5f3ed 50%, #e8e6e0 100%);">
+    <section
+      id="nosotros"
+      class="relative py-28"
+      style="background: linear-gradient(to bottom, #faf8f5 0%, #f5f3ed 50%, #e8e6e0 100%);"
+    >
       <div class="mx-auto max-w-6xl px-6 lg:px-8">
         <!-- Desayunos - Imagen izquierda, texto derecha -->
         <div class="mb-20 grid items-center gap-16 lg:grid-cols-2">
           <div class="order-1">
-            <div class="group relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 hover:shadow-3xl hover:scale-[1.02]">
+            <div
+              class="group hover:shadow-3xl relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 hover:scale-[1.02]"
+            >
               <img
                 src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&h=400&fit=crop"
                 alt="Desayunos"
-                class="h-96 w-full object-cover lg:h-[400px] transition-transform duration-700 group-hover:scale-110"
+                class="h-96 w-full object-cover transition-transform duration-700 group-hover:scale-110 lg:h-[400px]"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-navy-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div
+                class="from-navy-900/20 absolute inset-0 bg-gradient-to-t to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              >
+              </div>
             </div>
           </div>
 
@@ -285,20 +332,13 @@ import Layout from '../layouts/Layout.astro';
                 <span style="color: #4a4d00;">Desayunos</span>
               </h2>
               <p class="mb-6 text-lg leading-relaxed text-gray-700">
-                Comenzamos cada día con <strong style="color: #c7c99b;"
-                  >desayunos tradicionales</strong
-                > elaborados con productos de <strong style="color: #c7c99b;">máxima calidad</strong
-                >.
+                En Venta El Cruce las mañanas comienzan con aroma a <strong style="color: #4a4d00;">pan tostado</strong>, <strong style="color: #4a4d00;">café recién hecho</strong> y el murmullo tranquilo de quienes disfrutan empezar el día sin prisas.
               </p>
               <p class="mb-6 text-lg leading-relaxed text-gray-700">
-                Desde nuestros <strong style="color: #c7c99b;">tostones artesanales</strong> hasta nuestros
-                <strong style="color: #c7c99b;">huevos camperos</strong>, cada desayuno es una
-                experiencia única.
+                Nuestros desayunos son un homenaje al <strong style="color: #4a4d00;">sabor andaluz de siempre</strong>: tostones dorados, café, <strong style="color: #4a4d00;">jamón ibérico</strong>, <strong style="color: #4a4d00;">mermeladas caseras</strong> que recuerdan a las de la abuela y una gran variedad de ingredientes que hará de un desayuno una <strong style="color: #4a4d00;">experiencia única</strong>.
               </p>
               <p class="text-lg leading-relaxed text-gray-700">
-                Nuestro <strong style="color: #c7c99b;">café de tueste natural</strong> y nuestras <strong
-                  style="color: #c7c99b;">mermeladas caseras</strong
-                > completan una propuesta gastronómica que despierta todos los sentidos.
+                Aquí, cada bocado es una invitación a saborear <strong style="color: #4a4d00;">la calma, la tradición y el placer de lo sencillo</strong>.
               </p>
             </div>
           </div>
@@ -312,34 +352,30 @@ import Layout from '../layouts/Layout.astro';
                 <span style="color: #4a4d00;">Comidas</span>
               </h2>
               <p class="mb-6 text-lg leading-relaxed text-gray-700">
-                Nuestro <strong style="color: #c7c99b;">amplio salón comedor</strong> te ofrece el espacio
-                perfecto para disfrutar de <strong style="color: #c7c99b;"
-                  >almuerzos y cenas memorables</strong
-                >.
+                Cuando llega la hora de comer, Venta El Cruce se llena del olor de los <strong style="color: #4a4d00;">guisos caseros</strong> y del <strong style="color: #4a4d00;">ambiente familiar</strong> que tanto nos caracteriza.
               </p>
               <p class="mb-6 text-lg leading-relaxed text-gray-700">
-                En <strong style="color: #c7c99b;">Venta El Cruce</strong> cada comida es una <strong
-                  style="color: #c7c99b;">celebración de sabores auténticos</strong
-                > y tradición culinaria.
+                Nuestros platos, preparados con <strong style="color: #4a4d00;">productos de máxima calidad</strong> y el mimo de siempre, son una <strong style="color: #4a4d00;">celebración de la cocina andaluza más auténtica</strong>: sabores profundos, recetas de toda la vida y un toque de alma en cada cucharada.
               </p>
               <p class="text-lg leading-relaxed text-gray-700">
-                Todos nuestros platos son <strong style="color: #c7c99b;"
-                  >elaborados por nuestro Chef</strong
-                > y su equipo con la <strong style="color: #c7c99b;">mejor materia prima</strong>.
-                Nuestra <strong style="color: #c7c99b;">zona de barra</strong> complementa la experiencia
-                con exquisitas tapas.
+                Porque aquí, más que servir comida, compartimos <strong style="color: #4a4d00;">momentos que saben a hogar</strong>.
               </p>
             </div>
           </div>
 
           <div class="order-1 lg:order-2">
-            <div class="group relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 hover:shadow-3xl hover:scale-[1.02]">
+            <div
+              class="group hover:shadow-3xl relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 hover:scale-[1.02]"
+            >
               <img
                 src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop"
                 alt="Comidas"
-                class="h-96 w-full object-cover lg:h-[400px] transition-transform duration-700 group-hover:scale-110"
+                class="h-96 w-full object-cover transition-transform duration-700 group-hover:scale-110 lg:h-[400px]"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-navy-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div
+                class="from-navy-900/20 absolute inset-0 bg-gradient-to-t to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              >
+              </div>
             </div>
           </div>
         </div>
@@ -347,7 +383,11 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- Nuestros Espacios Section -->
-    <section id="espacios" class="relative py-28" style="background: linear-gradient(to bottom, #f5f3ed 0%, #e8e6e0 50%, #e8e6e0 100%);">
+    <section
+      id="espacios"
+      class="relative py-28"
+      style="background: linear-gradient(to bottom, #f5f3ed 0%, #e8e6e0 50%, #e8e6e0 100%);"
+    >
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <!-- Section Header -->
         <div class="mb-16 text-center">
@@ -365,19 +405,24 @@ import Layout from '../layouts/Layout.astro';
         <!-- Grid de 4 elementos: 3 imágenes + 1 descripción -->
         <div class="mb-12 grid grid-cols-1 gap-6 lg:grid-cols-4">
           <!-- Imagen 1 - La Barra -->
-          <div class="group relative overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl">
+          <div
+            class="group relative overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl"
+          >
             <img
-              src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=400&h=500&fit=crop"
+              src="/images/espacios/espacios-1.jpg"
               alt="La Barra"
               class="h-80 w-full object-cover transition-transform duration-700 group-hover:scale-110 lg:h-96"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            >
+            </div>
           </div>
 
           <!-- Imagen 2 - Salón Principal -->
           <div class="group relative overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&h=500&fit=crop"
+              src="/images/espacios/espacios-2.jpg"
               alt="Salón Principal"
               class="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105 lg:h-96"
             />
@@ -460,7 +505,11 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- Menu Section - Light Background for contrast -->
-    <section id="carta" class="relative py-24" style="background-image: url('/fondo-carta.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <section
+      id="carta"
+      class="relative py-24"
+      style="background-image: url('/fondo-carta.jpg'); background-size: cover; background-position: center; background-attachment: fixed;"
+    >
       <!-- Overlay para mejorar legibilidad -->
       <div class="absolute inset-0 bg-white/70"></div>
       <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
@@ -490,7 +539,7 @@ import Layout from '../layouts/Layout.astro';
               <div class="bg-gold-500 mx-auto h-1 w-20"></div>
             </div>
             <div class="space-y-4">
-              <div class="pb-3 relative">
+              <div class="relative pb-3">
                 <div class="flex items-start justify-between">
                   <div class="flex-1">
                     <h4 class="text-navy-900 text-base font-semibold">Ensalada de Tomate</h4>
@@ -502,12 +551,24 @@ import Layout from '../layouts/Layout.astro';
                     >7.00€</span
                   >
                 </div>
-                <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                  <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <svg
+                  class="mt-3"
+                  width="60%"
+                  height="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 300 12"
+                >
+                  <path
+                    d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                    stroke="#4a4d00"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke-linecap="round"></path>
                 </svg>
               </div>
 
-              <div class="pb-3 relative">
+              <div class="relative pb-3">
                 <div class="flex items-start justify-between">
                   <div class="flex-1">
                     <h4 class="text-navy-900 text-base font-semibold">La casera del huerto</h4>
@@ -517,8 +578,20 @@ import Layout from '../layouts/Layout.astro';
                     >9.00€</span
                   >
                 </div>
-                <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                  <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <svg
+                  class="mt-3"
+                  width="60%"
+                  height="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 300 12"
+                >
+                  <path
+                    d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                    stroke="#4a4d00"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke-linecap="round"></path>
                 </svg>
               </div>
 
@@ -550,7 +623,7 @@ import Layout from '../layouts/Layout.astro';
               <div class="bg-gold-500 mx-auto h-1 w-20"></div>
             </div>
             <div class="space-y-4">
-              <div class="pb-3 relative">
+              <div class="relative pb-3">
                 <div class="flex items-start justify-between">
                   <div class="flex-1">
                     <h4 class="text-navy-900 text-base font-semibold">
@@ -564,12 +637,24 @@ import Layout from '../layouts/Layout.astro';
                     >8.00€</span
                   >
                 </div>
-                <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                  <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <svg
+                  class="mt-3"
+                  width="60%"
+                  height="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 300 12"
+                >
+                  <path
+                    d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                    stroke="#4a4d00"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke-linecap="round"></path>
                 </svg>
               </div>
 
-              <div class="pb-3 relative">
+              <div class="relative pb-3">
                 <div class="flex items-start justify-between">
                   <div class="flex-1">
                     <h4 class="text-navy-900 text-base font-semibold">2. Serranito</h4>
@@ -581,12 +666,24 @@ import Layout from '../layouts/Layout.astro';
                     >8.00€</span
                   >
                 </div>
-                <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                  <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <svg
+                  class="mt-3"
+                  width="60%"
+                  height="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 300 12"
+                >
+                  <path
+                    d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                    stroke="#4a4d00"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke-linecap="round"></path>
                 </svg>
               </div>
 
-              <div class="pb-3 relative">
+              <div class="relative pb-3">
                 <div class="flex items-start justify-between">
                   <div class="flex-1">
                     <h4 class="text-navy-900 text-base font-semibold">3. El Brillante</h4>
@@ -598,12 +695,24 @@ import Layout from '../layouts/Layout.astro';
                     >10.00€</span
                   >
                 </div>
-                <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                  <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <svg
+                  class="mt-3"
+                  width="60%"
+                  height="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 300 12"
+                >
+                  <path
+                    d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                    stroke="#4a4d00"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke-linecap="round"></path>
                 </svg>
               </div>
 
-              <div class="pb-3 relative">
+              <div class="relative pb-3">
                 <div class="flex items-start justify-between">
                   <div class="flex-1">
                     <h4 class="text-navy-900 text-base font-semibold">4. Camarero</h4>
@@ -615,12 +724,24 @@ import Layout from '../layouts/Layout.astro';
                     >7.00€</span
                   >
                 </div>
-                <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                  <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <svg
+                  class="mt-3"
+                  width="60%"
+                  height="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 300 12"
+                >
+                  <path
+                    d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                    stroke="#4a4d00"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke-linecap="round"></path>
                 </svg>
               </div>
 
-              <div class="pb-3 relative">
+              <div class="relative pb-3">
                 <div class="flex items-start justify-between">
                   <div class="flex-1">
                     <h4 class="text-navy-900 text-base font-semibold">5. Carne al Toro</h4>
@@ -630,12 +751,24 @@ import Layout from '../layouts/Layout.astro';
                     >8.00€</span
                   >
                 </div>
-                <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                  <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <svg
+                  class="mt-3"
+                  width="60%"
+                  height="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 300 12"
+                >
+                  <path
+                    d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                    stroke="#4a4d00"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke-linecap="round"></path>
                 </svg>
               </div>
 
-              <div class="pb-3 relative">
+              <div class="relative pb-3">
                 <div class="flex items-start justify-between">
                   <div class="flex-1">
                     <h4 class="text-navy-900 text-base font-semibold">6. Carrillada</h4>
@@ -645,8 +778,20 @@ import Layout from '../layouts/Layout.astro';
                     >10.00€</span
                   >
                 </div>
-                <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                  <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <svg
+                  class="mt-3"
+                  width="60%"
+                  height="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 300 12"
+                >
+                  <path
+                    d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                    stroke="#4a4d00"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke-linecap="round"></path>
                 </svg>
               </div>
 
@@ -676,7 +821,7 @@ import Layout from '../layouts/Layout.astro';
               <div class="bg-navy-500 mx-auto h-1 w-20"></div>
             </div>
             <div class="space-y-4">
-              <div class="pb-3 relative">
+              <div class="relative pb-3">
                 <div class="flex items-start justify-between">
                   <div class="flex-1">
                     <h4 class="text-navy-900 text-base font-semibold">LA JANDA</h4>
@@ -689,8 +834,20 @@ import Layout from '../layouts/Layout.astro';
                     >12.00€</span
                   >
                 </div>
-                <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                  <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <svg
+                  class="mt-3"
+                  width="60%"
+                  height="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 300 12"
+                >
+                  <path
+                    d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                    stroke="#4a4d00"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke-linecap="round"></path>
                 </svg>
               </div>
 
@@ -962,18 +1119,30 @@ import Layout from '../layouts/Layout.astro';
                   >
                   <span></span>
                 </div>
-                <div class="mt-4 flex items-center justify-between pt-3 relative">
+                <div class="relative mt-4 flex items-center justify-between pt-3">
                   <span class="text-navy-700 font-semibold">Media: 1,50€ / Entera: 2,50€</span>
                 </div>
-                <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                  <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <svg
+                  class="mt-3"
+                  width="60%"
+                  height="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 300 12"
+                >
+                  <path
+                    d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                    stroke="#4a4d00"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke-linecap="round"></path>
                 </svg>
               </div>
             </div>
 
             <div class="p-6">
               <div class="space-y-4">
-                <div class="pb-2 relative">
+                <div class="relative pb-2">
                   <div class="flex items-start justify-between">
                     <div class="flex-1">
                       <h4 class="text-navy-900 font-semibold">Las Delicias:</h4>
@@ -983,84 +1152,172 @@ import Layout from '../layouts/Layout.astro';
                     </div>
                     <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">6.00€</span>
                   </div>
-                  <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                    <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <svg
+                    class="mt-3"
+                    width="60%"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 12"
+                  >
+                    <path
+                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                      stroke="#4a4d00"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"></path>
                   </svg>
                 </div>
 
-                <div class="pb-2 relative">
+                <div class="relative pb-2">
                   <div class="flex items-start justify-between">
                     <div class="flex-1">
                       <h4 class="text-navy-900 font-semibold">Huevos fritos con Jamón Ibérico</h4>
                     </div>
                     <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">8.00€</span>
                   </div>
-                  <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                    <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <svg
+                    class="mt-3"
+                    width="60%"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 12"
+                  >
+                    <path
+                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                      stroke="#4a4d00"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"></path>
                   </svg>
                 </div>
 
-                <div class="pb-2 relative">
+                <div class="relative pb-2">
                   <div class="flex items-start justify-between">
                     <div class="flex-1">
                       <h4 class="text-navy-900 font-semibold">El Ranchero:</h4>
                       <p class="text-navy-600 text-sm">
-                        Rebanada de campo tostada con queso de rulo de cabra fundido sobre una semilla
-                        de sésamo y calabacín
+                        Rebanada de campo tostada con queso de rulo de cabra fundido sobre una
+                        semilla de sésamo y calabacín
                       </p>
                     </div>
                     <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">6.00€</span>
                   </div>
-                  <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                    <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <svg
+                    class="mt-3"
+                    width="60%"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 12"
+                  >
+                    <path
+                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                      stroke="#4a4d00"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"></path>
                   </svg>
                 </div>
 
-                <div class="pb-2 relative">
+                <div class="relative pb-2">
                   <div class="flex items-start justify-between">
                     <div class="flex-1">
-                      <h4 class="text-navy-900 font-semibold">Aguacate con limón y sal de escamas</h4>
+                      <h4 class="text-navy-900 font-semibold">
+                        Aguacate con limón y sal de escamas
+                      </h4>
                     </div>
                     <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">3.00€</span>
                   </div>
-                  <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                    <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <svg
+                    class="mt-3"
+                    width="60%"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 12"
+                  >
+                    <path
+                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                      stroke="#4a4d00"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"></path>
                   </svg>
                 </div>
 
-                <div class="pb-2 relative">
+                <div class="relative pb-2">
                   <div class="flex items-start justify-between">
                     <div class="flex-1">
-                      <h4 class="text-navy-900 font-semibold">Plato de Jamón Ibérico en Crujiente</h4>
+                      <h4 class="text-navy-900 font-semibold">
+                        Plato de Jamón Ibérico en Crujiente
+                      </h4>
                     </div>
                     <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">5.00€</span>
                   </div>
-                  <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                    <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <svg
+                    class="mt-3"
+                    width="60%"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 12"
+                  >
+                    <path
+                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                      stroke="#4a4d00"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"></path>
                   </svg>
                 </div>
 
-                <div class="pb-2 relative">
+                <div class="relative pb-2">
                   <div class="flex items-start justify-between">
                     <div class="flex-1">
                       <h4 class="text-navy-900 font-semibold">Plato de Jamón Serrano en Bodega</h4>
                     </div>
                     <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">2.00€</span>
                   </div>
-                  <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                    <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <svg
+                    class="mt-3"
+                    width="60%"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 12"
+                  >
+                    <path
+                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                      stroke="#4a4d00"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"></path>
                   </svg>
                 </div>
 
-                <div class="pb-2 relative">
+                <div class="relative pb-2">
                   <div class="flex items-start justify-between">
                     <div class="flex-1">
                       <h4 class="text-navy-900 font-semibold">Plato de Jamón York Cocido</h4>
                     </div>
                     <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">2.00€</span>
                   </div>
-                  <svg class="mt-3" width="60%" height="12" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 300 12">
-                    <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <svg
+                    class="mt-3"
+                    width="60%"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 12"
+                  >
+                    <path
+                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                      stroke="#4a4d00"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"></path>
                   </svg>
                 </div>
 
@@ -1085,18 +1342,20 @@ import Layout from '../layouts/Layout.astro';
       <div class="relative overflow-hidden">
         <!-- Imagen de fondo con overlay oscuro -->
         <div class="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&h=400&fit=crop&q=80" 
+          <img
+            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&h=400&fit=crop&q=80"
             alt="Platos de comida tradicional"
             class="h-full w-full object-cover"
           />
           <div class="absolute inset-0 bg-black/65"></div>
         </div>
-        
+
         <!-- Contenido del header -->
         <div class="relative z-10 py-52 text-center">
-          <h2 class="text-white mb-4 font-serif text-4xl font-bold"><span style="color: #c7c99b;">Visítanos</span></h2>
-          <p class="text-white mx-auto max-w-2xl text-lg">
+          <h2 class="mb-4 font-serif text-4xl font-bold text-white">
+            <span style="color: #c7c99b;">Visítanos</span>
+          </h2>
+          <p class="mx-auto max-w-2xl text-lg text-white">
             Ven a disfrutar de una experiencia gastronómica única en un entorno natural
             privilegiado.
           </p>
@@ -1104,14 +1363,12 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <!-- Contact content -->
-      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20">
+      <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
         <div class="grid gap-12 lg:grid-cols-2">
           <!-- Contact Information -->
           <div class="space-y-8">
             <div class="bg-navy-800 rounded-lg p-8">
-              <h3 class="text-gold-300 mb-6 text-2xl font-semibold">
-                Información de Contacto
-              </h3>
+              <h3 class="text-gold-300 mb-6 text-2xl font-semibold">Información de Contacto</h3>
 
               <div class="space-y-6">
                 <div>
@@ -1128,7 +1385,8 @@ import Layout from '../layouts/Layout.astro';
                   <p class="text-gold-100">
                     <a
                       href="tel:+34956235209"
-                      class="hover:text-gold-300 font-medium transition-colors text-xl">956 235 209</a
+                      class="hover:text-gold-300 text-xl font-medium transition-colors"
+                      >956 235 209</a
                     >
                   </p>
                 </div>
@@ -1144,8 +1402,20 @@ import Layout from '../layouts/Layout.astro';
                       <span class="font-medium">Lunes:</span>
                       <span class="font-bold text-red-400">Cerrado</span>
                     </div>
-                    <svg class="mt-3" width="50%" height="10" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 300 12">
-                      <path d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6" stroke="#4a4d00" stroke-width="4" fill="none" stroke-linecap="round"/>
+                    <svg
+                      class="mt-3"
+                      width="50%"
+                      height="10"
+                      xmlns="http://www.w3.org/2000/svg"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 300 12"
+                    >
+                      <path
+                        d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                        stroke="#4a4d00"
+                        stroke-width="4"
+                        fill="none"
+                        stroke-linecap="round"></path>
                     </svg>
                   </div>
                 </div>
@@ -1158,24 +1428,28 @@ import Layout from '../layouts/Layout.astro';
                     href="https://facebook.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="rounded p-3 text-white transition-all duration-300 hover:opacity-80 flex items-center justify-center"
+                    class="flex items-center justify-center rounded p-3 text-white transition-all duration-300 hover:opacity-80"
                     style="background-color: #4a4d00;"
                     title="Facebook"
                   >
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                      ></path>
                     </svg>
                   </a>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/ventaelcruce.elcaprichoandaluz/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="rounded p-3 text-white transition-all duration-300 hover:opacity-80 flex items-center justify-center"
+                    class="flex items-center justify-center rounded p-3 text-white transition-all duration-300 hover:opacity-80"
                     style="background-color: #4a4d00;"
                     title="Instagram"
                   >
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                      ></path>
                     </svg>
                   </a>
                 </div>
@@ -1213,7 +1487,6 @@ import Layout from '../layouts/Layout.astro';
                   Abrir en Google Maps
                 </a>
               </div>
-              
             </div>
 
             <!-- Quick Contact Card -->
@@ -1222,7 +1495,7 @@ import Layout from '../layouts/Layout.astro';
               <div class="flex justify-center">
                 <a
                   href="tel:+34956235209"
-                  class="inline-flex items-center px-8 py-4 font-semibold text-white rounded transition-all duration-300 hover:opacity-80"
+                  class="inline-flex items-center rounded px-8 py-4 font-semibold text-white transition-all duration-300 hover:opacity-80"
                   style="background-color: #4a4d00;"
                 >
                   <span class="font-medium">Llamar Ahora</span>
@@ -1234,21 +1507,33 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Additional Info Section -->
         <div class="mt-16 grid gap-8 md:grid-cols-3">
-          <div class="bg-navy-800 rounded-lg p-6 text-center relative">
-            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-12 h-1.5" style="background-color: #4a4d00;"></div>
-            <h4 class="text-gold-300 mb-2 font-semibold text-lg">Fácil Acceso</h4>
+          <div class="bg-navy-800 relative rounded-lg p-6 text-center">
+            <div
+              class="absolute top-0 left-1/2 h-1.5 w-12 -translate-x-1/2 transform"
+              style="background-color: #4a4d00;"
+            >
+            </div>
+            <h4 class="text-gold-300 mb-2 text-lg font-semibold">Fácil Acceso</h4>
             <p class="text-gold-100 text-sm">Amplio aparcamiento gratuito disponible</p>
           </div>
 
-          <div class="bg-navy-800 rounded-lg p-6 text-center relative">
-            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-12 h-1.5" style="background-color: #4a4d00;"></div>
-            <h4 class="text-gold-300 mb-2 font-semibold text-lg">Accesibilidad</h4>
+          <div class="bg-navy-800 relative rounded-lg p-6 text-center">
+            <div
+              class="absolute top-0 left-1/2 h-1.5 w-12 -translate-x-1/2 transform"
+              style="background-color: #4a4d00;"
+            >
+            </div>
+            <h4 class="text-gold-300 mb-2 text-lg font-semibold">Accesibilidad</h4>
             <p class="text-gold-100 text-sm">Instalaciones completamente accesibles</p>
           </div>
 
-          <div class="bg-navy-800 rounded-lg p-6 text-center relative">
-            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-12 h-1.5" style="background-color: #4a4d00;"></div>
-            <h4 class="text-gold-300 mb-2 font-semibold text-lg">Entorno Natural</h4>
+          <div class="bg-navy-800 relative rounded-lg p-6 text-center">
+            <div
+              class="absolute top-0 left-1/2 h-1.5 w-12 -translate-x-1/2 transform"
+              style="background-color: #4a4d00;"
+            >
+            </div>
+            <h4 class="text-gold-300 mb-2 text-lg font-semibold">Entorno Natural</h4>
             <p class="text-gold-100 text-sm">Rodeado de un hermoso paisaje natural</p>
           </div>
         </div>
@@ -1262,9 +1547,9 @@ import Layout from '../layouts/Layout.astro';
           <div class="space-y-4">
             <div>
               <div class="mb-4">
-                <img 
-                  src="/Logo venta el cruce.png" 
-                  alt="Venta El Cruce - Capricho Andaluz" 
+                <img
+                  src="/Logo venta el cruce.png"
+                  alt="Venta El Cruce - Capricho Andaluz"
                   class="h-16 w-auto"
                 />
               </div>
@@ -1279,23 +1564,27 @@ import Layout from '../layouts/Layout.astro';
                 target="_blank"
                 rel="noopener noreferrer"
                 style="background-color: #3A3A3A;"
-                class="rounded p-3 text-white transition-all duration-300 hover:bg-gray-700 flex items-center justify-center"
+                class="flex items-center justify-center rounded p-3 text-white transition-all duration-300 hover:bg-gray-700"
                 title="Facebook"
               >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  ></path>
                 </svg>
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/ventaelcruce.elcaprichoandaluz/"
                 target="_blank"
                 rel="noopener noreferrer"
                 style="background-color: #3A3A3A;"
-                class="rounded p-3 text-white transition-all duration-300 hover:bg-gray-700 flex items-center justify-center"
+                class="flex items-center justify-center rounded p-3 text-white transition-all duration-300 hover:bg-gray-700"
                 title="Instagram"
               >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  ></path>
                 </svg>
               </a>
             </div>
@@ -1400,7 +1689,7 @@ import Layout from '../layouts/Layout.astro';
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const header = document.getElementById('header');
-    const logoImg = document.getElementById('logo-img');
+    const logoText = document.getElementById('logo-text');
     const navLinks = document.querySelectorAll('.nav-link');
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
@@ -1449,10 +1738,10 @@ import Layout from '../layouts/Layout.astro';
         }
 
         // Mostrar logo
-        const logoImg = document.getElementById('logo-img');
-        if (logoImg) {
-          logoImg.classList.remove('opacity-0');
-          logoImg.classList.add('opacity-100');
+        const logoText = document.getElementById('logo-text');
+        if (logoText) {
+          logoText.classList.remove('opacity-0');
+          logoText.classList.add('opacity-100');
         }
 
         // Cambiar colores y tamaño de navegación
@@ -1489,10 +1778,10 @@ import Layout from '../layouts/Layout.astro';
         }
 
         // Ocultar logo
-        const logoImg = document.getElementById('logo-img');
-        if (logoImg) {
-          logoImg.classList.remove('opacity-100');
-          logoImg.classList.add('opacity-0');
+        const logoText = document.getElementById('logo-text');
+        if (logoText) {
+          logoText.classList.remove('opacity-100');
+          logoText.classList.add('opacity-0');
         }
 
         // Restaurar colores y tamaño de navegación a blanco con hover dorado
@@ -1573,7 +1862,7 @@ import Layout from '../layouts/Layout.astro';
       dot.addEventListener('click', () => {
         currentSlide = index;
         showSlide(currentSlide);
-        
+
         // Reset interval when manually changing slides
         clearInterval(sliderInterval);
         sliderInterval = setInterval(nextSlide, 6000);
@@ -1682,7 +1971,9 @@ import Layout from '../layouts/Layout.astro';
     .hero-slide {
       opacity: 0;
       transform: scale(1.1);
-      transition: opacity 2s ease-in-out, transform 8s ease-out;
+      transition:
+        opacity 2s ease-in-out,
+        transform 8s ease-out;
       pointer-events: none;
     }
 

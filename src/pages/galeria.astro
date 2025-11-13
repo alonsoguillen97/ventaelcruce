@@ -12,12 +12,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="flex items-center justify-between">
         <div class="flex items-center">
           <a href="/" class="flex items-center">
-            <img 
-              src="/Logo venta el cruce.png" 
-              alt="Venta El Cruce - Capricho Andaluz"
-              class="h-12 w-auto transition-all duration-500 opacity-0"
-              id="logo-img"
-            />
+            <span class="text-white font-bold text-2xl opacity-0 transition-all duration-500" id="logo-text">Venta El Cruce</span>
           </a>
         </div>
 
@@ -71,10 +66,10 @@ import Layout from '../layouts/Layout.astro';
 
           <!-- Instagram -->
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/ventaelcruce.elcaprichoandaluz/"
             target="_blank"
             rel="noopener noreferrer"
-            class="nav-social text-white hover:text-gold-300 transition-all duration-300"
+            class="nav-social hover:text-gold-300 text-white transition-all duration-300"
             title="Instagram"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -632,7 +627,7 @@ import Layout from '../layouts/Layout.astro';
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   const header = document.getElementById('header');
-  const logoImg = document.getElementById('logo-img');
+  const logoText = document.getElementById('logo-text');
   const navLinks = document.querySelectorAll('.nav-link');
   const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
@@ -760,9 +755,9 @@ import Layout from '../layouts/Layout.astro';
       }
 
       // Mostrar logo
-      if (logoImg) {
-        logoImg.classList.remove('opacity-0');
-        logoImg.classList.add('opacity-100');
+      if (logoText) {
+        logoText.classList.remove('opacity-0');
+        logoText.classList.add('opacity-100');
       }
 
       // Cambiar navegación a texto más pequeño y hover gris
@@ -798,9 +793,9 @@ import Layout from '../layouts/Layout.astro';
       }
 
       // Ocultar logo
-      if (logoImg) {
-        logoImg.classList.remove('opacity-100');
-        logoImg.classList.add('opacity-0');
+      if (logoText) {
+        logoText.classList.remove('opacity-100');
+        logoText.classList.add('opacity-0');
       }
 
       // Restaurar navegación a texto blanco con hover dorado
