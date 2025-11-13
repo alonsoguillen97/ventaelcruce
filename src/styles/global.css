@@ -33,3 +33,14 @@ html {
   height: 1px;
   background: linear-gradient(to right, transparent, #a0522d, transparent);
 }
+
+/* Verde oliva para header - CSS global para asegurar aplicación en Vercel */
+#header.bg-verde-oliva {
+  background-color: #4a4d00 !important;
+  border-bottom: none !important;
+}
+
+/* Asegurar que el verde oliva tenga máxima prioridad */
+header.bg-verde-oliva {
+  background-color: #4a4d00 !important;
+}
