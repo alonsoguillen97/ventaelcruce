@@ -124,47 +124,42 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="absolute inset-0 bg-linear-to-r from-black/85 via-black/50 to-black/20"></div>
 
-      <div class="relative z-10 mx-auto h-full max-w-7xl px-6 lg:px-12">
-        <div class="grid min-h-screen items-center gap-8 lg:grid-cols-12">
-          <!-- Contenido de texto -->
-          <div class="py-12 lg:col-span-7 xl:col-span-6">
-            <div class="mb-8">
-              <div class="bg-gold-400 mb-6 h-1 w-20"></div>
-              <h1
-                class="font-elegant mb-4 text-4xl leading-tight font-bold tracking-wide whitespace-nowrap text-white md:text-5xl lg:text-5xl xl:text-6xl"
-              >
-                Venta El Cruce - TEST DEPLOYMENT
-              </h1>
-              <p
-                class="mb-6 text-lg font-light tracking-wide italic md:text-xl"
-                style="color: #fffaeb;"
-              >
-                Que no se pierda la costumbre
-              </p>
-              <div class="bg-gold-400 mb-8 h-1 w-28"></div>
-            </div>
-
-            <p class="mb-10 max-w-lg text-lg leading-relaxed md:text-xl" style="color: #fffaeb;">
-              <span class="font-medium" style="color: #fffaeb;">Tradición culinaria desde 1952</span
-              ><br />
-              <span style="color: #fffaeb;"
-                >Donde la excelencia gastronómica se encuentra con la calidez del hogar</span
-              >
-            </p>
-
-            <div class="flex">
-              <a
-                href="#carta"
-                class="bg-gold-500 hover:bg-gold-400 border-gold-500 hover:border-gold-400 rounded-sm border-2 px-10 py-4 text-base font-semibold tracking-wider text-white uppercase shadow-xl transition-all duration-300 hover:scale-105 hover:text-white"
-              >
-                Descubrir Carta
-              </a>
+      <div class="relative z-10 mx-auto h-full w-full max-w-7xl px-6 lg:px-12">
+        <div class="flex min-h-screen flex-col justify-between py-12">
+          <!-- Contenido superior -->
+          <div class="flex-1 flex items-center">
+            <div class="max-w-2xl">
+              <div class="mb-8">
+                <div class="bg-gold-400 mb-6 h-1 w-20"></div>
+                <h1
+                  class="font-elegant mb-4 text-4xl leading-tight font-bold tracking-wide text-white md:text-5xl lg:text-6xl"
+                >
+                  Venta El Cruce
+                </h1>
+                <p
+                  class="mb-6 text-lg font-light tracking-wide italic md:text-xl"
+                  style="color: #fffaeb;"
+                >
+                  Que no se pierda la costumbre
+                </p>
+                <div class="bg-gold-400 mb-8 h-1 w-28"></div>
+              </div>
             </div>
           </div>
 
-          <!-- Espacio para la imagen -->
-          <div class="hidden lg:col-span-5 lg:block xl:col-span-6">
-            <!-- Este espacio permite que la imagen de fondo se aprecie -->
+          <!-- Logo y botón en la parte inferior -->
+          <div class="mt-12 lg:mt-0 flex items-center justify-between">
+            <img 
+              src="/Logo venta el cruce.png" 
+              alt="Capricho Andaluz - Venta El Cruce"
+              class="h-24 w-auto md:h-28 lg:h-32"
+            />
+            <a
+              href="#carta"
+              class="bg-gold-500 hover:bg-gold-400 border-gold-500 hover:border-gold-400 rounded-sm border-2 px-8 py-3 text-sm font-semibold tracking-wider text-white uppercase shadow-xl transition-all duration-300 hover:scale-105 hover:text-white md:px-10 md:py-4 md:text-base"
+            >
+              Descubrir Carta
+            </a>
           </div>
         </div>
       </div>
@@ -178,15 +173,25 @@ import Layout from '../layouts/Layout.astro';
         </h2>
         <div class="space-y-6 text-lg leading-relaxed text-gray-700">
           <p>
-            En <strong style="color: #c7c99b;">Venta El Cruce</strong>, estamos aquí para ofrecerte una 
-            <strong style="color: #c7c99b;">experiencia única</strong> que combina la tradición de una venta típica 
-            con la <strong style="color: #c7c99b;">comodidad</strong> y el servicio de 
-            <strong style="color: #c7c99b;">alta calidad</strong>.
+            En la <strong style="color: #c7c99b;">Venta El Cruce</strong> le hacemos un homenaje a 
+            <strong style="color: #c7c99b;">El Capricho Andaluz</strong>… Ese buen café calentito acompañado de un buen desayuno 
+            para comenzar el día, con el aroma del pan recién tostado y el sabor auténtico de nuestra tierra.
           </p>
           <p>
-            Nuestro compromiso es hacer que cada visita sea inolvidable, y por eso estamos 
-            <strong style="color: #c7c99b;">abiertos todos los días de la semana</strong>, 
-            para atenderte cuando más nos necesites.
+            En la Venta el Cruce te abrimos las puertas a un rincón donde la 
+            <strong style="color: #c7c99b;">tradición y el sabor</strong> se encuentran. Nuestra venta acoge tanto a quienes 
+            van de paso como a quienes deciden quedarse y volver una y otra vez, atraídos por el sabor y olor de nuestros 
+            <strong style="color: #c7c99b;">desayunos y comida casera</strong>.
+          </p>
+          <p>
+            Aquí podrás disfrutar de <strong style="color: #c7c99b;">productos ibéricos de la zona</strong>, seleccionados con mimo, 
+            y de <strong style="color: #c7c99b;">guisos caseros</strong> elaborados siguiendo las recetas de siempre, esas que 
+            huelen a hogar y a campo andaluz.
+          </p>
+          <p>
+            Ven a disfrutar de un <strong style="color: #c7c99b;">ambiente familiar</strong>, donde cada plato cuenta una historia 
+            y cada visita deja un recuerdo. Porque en <strong style="color: #c7c99b;">El Capricho Andaluz</strong>, más que comer… 
+            se vive Andalucía.
           </p>
         </div>
       </div>

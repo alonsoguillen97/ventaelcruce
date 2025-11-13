@@ -44,7 +44,7 @@ export default {
       },
       fontFamily: {
         'serif': ['Playfair Display', 'serif'],
-        'elegant': ['Cormorant Garamond', 'serif'],
+        'elegant': ['Montserrat', 'sans-serif'],
         'sans': ['Inter', 'sans-serif'],
       }
     },
