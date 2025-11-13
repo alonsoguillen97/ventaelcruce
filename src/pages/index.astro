@@ -133,7 +133,7 @@ import Layout from '../layouts/Layout.astro';
               <h1
                 class="font-elegant mb-4 text-4xl leading-tight font-bold tracking-wide whitespace-nowrap text-white md:text-5xl lg:text-5xl xl:text-6xl"
               >
-                Venta El Cruce
+                Venta El Cruce - TEST DEPLOYMENT
               </h1>
               <p
                 class="mb-6 text-lg font-light tracking-wide italic md:text-xl"
@@ -1041,9 +1041,13 @@ import Layout from '../layouts/Layout.astro';
     const heroSection = document.getElementById('inicio');
     const heroHeight = heroSection ? heroSection.offsetHeight * 0.7 : 500; // 70% de la altura del hero
 
+    console.log('UpdateHeader called - scrollY:', scrollY, 'heroHeight:', heroHeight);
+
     if (scrollY > heroHeight) {
-      // Header con fondo verde oliva sólido después del scroll
+      // Header con fondo verde oliva sólido después del scroll - Múltiples métodos
       header.classList.add('bg-verde-oliva');
+      header.style.backgroundColor = '#4a4d00';
+      header.style.setProperty('background-color', '#4a4d00', 'important');
       header.classList.remove('bg-white', 'shadow-lg', 'backdrop-blur-sm', 'bg-gold-100');
       logoText.classList.add('text-white');
       logoText.classList.remove('text-navy-900');
@@ -1075,6 +1079,8 @@ import Layout from '../layouts/Layout.astro';
       // Header con fondo dorado claro inicial
       header.classList.add('bg-gold-100', 'shadow-lg');
       header.classList.remove('bg-verde-oliva');
+      header.style.backgroundColor = '';
+      header.style.removeProperty('background-color');
       logoText.classList.add('text-navy-900');
       logoText.classList.remove('text-white');
 
@@ -1107,6 +1113,17 @@ import Layout from '../layouts/Layout.astro';
   // Ejecutar al cargar y al hacer scroll
   window.addEventListener('scroll', updateHeader);
   window.addEventListener('load', updateHeader);
+  
+  // DEBUGGING: Forzar color verde después de 3 segundos para verificar que funciona en Vercel
+  setTimeout(() => {
+    console.log('Forcing verde oliva color for debugging');
+    const header = document.getElementById('header');
+    if (header) {
+      header.classList.add('bg-verde-oliva');
+      header.style.backgroundColor = '#4a4d00';
+      header.style.setProperty('background-color', '#4a4d00', 'important');
+    }
+  }, 3000);
 
 
 
