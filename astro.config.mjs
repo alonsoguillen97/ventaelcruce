@@ -11,7 +11,7 @@ export default defineConfig({
     imageService: true,
     imagesConfig: {
       sizes: [320, 640, 768, 1024, 1280, 1920],
-      formats: ['webp', 'avif'],
+      formats: ['image/webp', 'image/avif'],
       domains: ['images.unsplash.com'],
     },
   }),
