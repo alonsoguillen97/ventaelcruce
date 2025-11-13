@@ -44,8 +44,8 @@ export default {
       },
       fontFamily: {
         'serif': ['Playfair Display', 'serif'],
-        'elegant': ['Montserrat', 'sans-serif'],
-        'sans': ['Inter', 'sans-serif'],
+        'elegant': ['Aleo', 'serif'],
+        'sans': ['Lato', 'sans-serif'],
       }
     },
   },
