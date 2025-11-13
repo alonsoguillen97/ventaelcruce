@@ -630,8 +630,8 @@ import Layout from '../layouts/Layout.astro';
     const heroHeight = heroSection ? heroSection.offsetHeight * 0.7 : 500; // 70% de la altura del hero
 
     if (scrollY > heroHeight) {
-      // Header con fondo oscuro sólido después del scroll
-      header.classList.add('bg-navy-900');
+      // Header con fondo verde oliva sólido después del scroll
+      header.style.backgroundColor = '#4a4d00';
       header.classList.remove('bg-white', 'shadow-lg', 'backdrop-blur-sm');
       logoText.classList.add('text-white');
       logoText.classList.remove('text-navy-900');
@@ -648,9 +648,9 @@ import Layout from '../layouts/Layout.astro';
         link.classList.remove('text-navy-700', 'hover:text-navy-900');
       });
 
-      // Cambiar fondo del menú móvil a oscuro sólido
+      // Cambiar fondo del menú móvil a verde oliva sólido
       if (mobileMenu) {
-        mobileMenu.classList.add('bg-navy-900');
+        mobileMenu.style.backgroundColor = '#4a4d00';
         mobileMenu.classList.remove('bg-white/95');
       }
 
@@ -662,7 +662,7 @@ import Layout from '../layouts/Layout.astro';
     } else {
       // Header con fondo dorado claro inicial
       header.classList.add('bg-gold-100', 'shadow-lg');
-      header.classList.remove('bg-navy-900');
+      header.style.backgroundColor = '';
       logoText.classList.add('text-navy-900');
       logoText.classList.remove('text-white');
 
@@ -681,7 +681,7 @@ import Layout from '../layouts/Layout.astro';
       // Restaurar fondo del menú móvil a dorado claro
       if (mobileMenu) {
         mobileMenu.classList.add('bg-gold-100');
-        mobileMenu.classList.remove('bg-navy-900');
+        mobileMenu.style.backgroundColor = '';
       }
 
       // Restaurar color del botón de menú móvil a navy
