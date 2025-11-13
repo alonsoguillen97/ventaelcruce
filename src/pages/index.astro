@@ -10,18 +10,15 @@ import Layout from '../layouts/Layout.astro';
   >
     <div class="mx-auto max-w-6xl px-4 py-3">
       <div class="flex items-center justify-between">
-        <div class="flex items-center space-x-3">
-          <div class="flex items-center space-x-3">
-            <div class="bg-gold-500 flex h-9 w-9 items-center justify-center">
-              <span class="text-navy-900 text-lg font-bold">V</span>
-            </div>
-            <h1
-              id="logo-text"
-              class="font-elegant text-navy-900 text-xl font-bold transition-colors duration-500"
-            >
-              Venta El Cruce
-            </h1>
-          </div>
+        <div class="flex items-center">
+          <a href="#inicio" class="flex items-center">
+            <img
+              src="/Logo venta el cruce.png"
+              alt="Venta El Cruce - Capricho Andaluz"
+              class="h-12 w-auto transition-all duration-500"
+              id="logo-img"
+            />
+          </a>
         </div>
 
         <div class="hidden items-center space-x-6 md:flex">
@@ -127,7 +124,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="relative z-10 mx-auto h-full w-full max-w-7xl px-6 lg:px-12">
         <div class="flex min-h-screen flex-col justify-between py-12">
           <!-- Contenido superior -->
-          <div class="flex-1 flex items-center">
+          <div class="flex flex-1 items-center">
             <div class="max-w-2xl">
               <div class="mb-8">
                 <div class="bg-gold-400 mb-6 h-1 w-20"></div>
@@ -137,7 +134,7 @@ import Layout from '../layouts/Layout.astro';
                   Venta El Cruce
                 </h1>
                 <p
-                  class="mb-6 text-lg font-light tracking-wide italic md:text-xl"
+                  class="mb-6 text-2xl font-light tracking-wide italic md:text-3xl lg:text-4xl"
                   style="color: #fffaeb;"
                 >
                   Que no se pierda la costumbre
@@ -148,9 +145,9 @@ import Layout from '../layouts/Layout.astro';
           </div>
 
           <!-- Logo y botón en la parte inferior -->
-          <div class="mt-12 lg:mt-0 flex items-center justify-between">
-            <img 
-              src="/Logo venta el cruce.png" 
+          <div class="mt-12 flex items-center justify-between lg:mt-0">
+            <img
+              src="/Logo venta el cruce.png"
               alt="Capricho Andaluz - Venta El Cruce"
               class="h-24 w-auto md:h-28 lg:h-32"
             />
@@ -173,25 +170,29 @@ import Layout from '../layouts/Layout.astro';
         </h2>
         <div class="space-y-6 text-lg leading-relaxed text-gray-700">
           <p>
-            En la <strong style="color: #c7c99b;">Venta El Cruce</strong> le hacemos un homenaje a 
-            <strong style="color: #c7c99b;">El Capricho Andaluz</strong>… Ese buen café calentito acompañado de un buen desayuno 
-            para comenzar el día, con el aroma del pan recién tostado y el sabor auténtico de nuestra tierra.
+            En la <strong style="color: #c7c99b;">Venta El Cruce</strong> le hacemos un homenaje a
+            <strong style="color: #c7c99b;">El Capricho Andaluz</strong>… Ese buen café calentito
+            acompañado de un buen desayuno para comenzar el día, con el aroma del pan recién tostado
+            y el sabor auténtico de nuestra tierra.
           </p>
           <p>
-            En la Venta el Cruce te abrimos las puertas a un rincón donde la 
-            <strong style="color: #c7c99b;">tradición y el sabor</strong> se encuentran. Nuestra venta acoge tanto a quienes 
-            van de paso como a quienes deciden quedarse y volver una y otra vez, atraídos por el sabor y olor de nuestros 
+            En la Venta el Cruce te abrimos las puertas a un rincón donde la
+            <strong style="color: #c7c99b;">tradición y el sabor</strong> se encuentran. Nuestra venta
+            acoge tanto a quienes van de paso como a quienes deciden quedarse y volver una y otra vez,
+            atraídos por el sabor y olor de nuestros
             <strong style="color: #c7c99b;">desayunos y comida casera</strong>.
           </p>
           <p>
-            Aquí podrás disfrutar de <strong style="color: #c7c99b;">productos ibéricos de la zona</strong>, seleccionados con mimo, 
-            y de <strong style="color: #c7c99b;">guisos caseros</strong> elaborados siguiendo las recetas de siempre, esas que 
-            huelen a hogar y a campo andaluz.
+            Aquí podrás disfrutar de <strong style="color: #c7c99b;"
+              >productos ibéricos de la zona</strong
+            >, seleccionados con mimo, y de <strong style="color: #c7c99b;">guisos caseros</strong> elaborados
+            siguiendo las recetas de siempre, esas que huelen a hogar y a campo andaluz.
           </p>
           <p>
-            Ven a disfrutar de un <strong style="color: #c7c99b;">ambiente familiar</strong>, donde cada plato cuenta una historia 
-            y cada visita deja un recuerdo. Porque en <strong style="color: #c7c99b;">El Capricho Andaluz</strong>, más que comer… 
-            se vive Andalucía.
+            Ven a disfrutar de un <strong style="color: #c7c99b;">ambiente familiar</strong>, donde
+            cada plato cuenta una historia y cada visita deja un recuerdo. Porque en <strong
+              style="color: #c7c99b;">El Capricho Andaluz</strong
+            >, más que comer… se vive Andalucía.
           </p>
         </div>
       </div>
@@ -1204,13 +1205,16 @@ import Layout from '../layouts/Layout.astro';
                 los derechos reservados.
               </p>
             </div>
-            <div class="flex items-center justify-center space-x-2" style="font-family: 'Aptos', sans-serif;">
+            <div
+              class="flex items-center justify-center space-x-2"
+              style="font-family: 'Aptos', sans-serif;"
+            >
               <span class="text-xs text-white">Desarrollado por</span>
               <a
                 href="https://atlantecdigital.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-white hover:text-gray-200 border-white/40 hover:border-gray-200 border-b pb-0.5 text-sm font-semibold no-underline transition-colors duration-300"
+                class="border-b border-white/40 pb-0.5 text-sm font-semibold text-white no-underline transition-colors duration-300 hover:border-gray-200 hover:text-gray-200"
               >
                 Atlantec Digital
               </a>
@@ -1227,7 +1231,7 @@ import Layout from '../layouts/Layout.astro';
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const header = document.getElementById('header');
-    const logoText = document.getElementById('logo-text');
+    const logoImg = document.getElementById('logo-img');
     const navLinks = document.querySelectorAll('.nav-link');
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
@@ -1274,10 +1278,6 @@ import Layout from '../layouts/Layout.astro';
           header.style.setProperty('background-color', '#4a4d00', 'important');
           header.classList.remove('bg-white', 'shadow-lg', 'backdrop-blur-sm', 'bg-gold-100');
         }
-        if (logoText) {
-          logoText.classList.add('text-white');
-          logoText.classList.remove('text-navy-900');
-        }
 
         // Cambiar colores de navegación a blanco
         navLinks.forEach((link) => {
@@ -1309,10 +1309,6 @@ import Layout from '../layouts/Layout.astro';
           header.classList.remove('bg-verde-oliva');
           header.style.backgroundColor = '';
           header.style.removeProperty('background-color');
-        }
-        if (logoText) {
-          logoText.classList.add('text-navy-900');
-          logoText.classList.remove('text-white');
         }
 
         // Restaurar colores de navegación a navy con hover navy oscuro

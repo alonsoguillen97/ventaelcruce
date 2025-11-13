@@ -10,18 +10,15 @@ import Layout from '../layouts/Layout.astro';
   >
     <div class="mx-auto max-w-6xl px-4 py-3">
       <div class="flex items-center justify-between">
-        <div class="flex items-center space-x-3">
-          <div class="flex items-center space-x-3">
-            <div class="bg-gold-500 flex h-9 w-9 items-center justify-center">
-              <span class="text-navy-900 text-lg font-bold">V</span>
-            </div>
-            <h1
-              id="logo-text"
-              class="font-elegant text-navy-900 text-xl font-bold transition-colors duration-500"
-            >
-              <a href="/">Venta El Cruce</a>
-            </h1>
-          </div>
+        <div class="flex items-center">
+          <a href="/" class="flex items-center">
+            <img 
+              src="/Logo venta el cruce.png" 
+              alt="Venta El Cruce - Capricho Andaluz"
+              class="h-12 w-auto transition-all duration-500"
+              id="logo-img"
+            />
+          </a>
         </div>
 
         <div class="hidden items-center space-x-6 md:flex">
@@ -594,7 +591,7 @@ import Layout from '../layouts/Layout.astro';
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   const header = document.getElementById('header');
-  const logoText = document.getElementById('logo-text');
+  const logoImg = document.getElementById('logo-img');
   const navLinks = document.querySelectorAll('.nav-link');
   const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
@@ -722,10 +719,6 @@ import Layout from '../layouts/Layout.astro';
         header.style.setProperty('background-color', '#4a4d00', 'important');
         header.classList.remove('bg-white', 'shadow-lg', 'backdrop-blur-sm', 'bg-gold-100');
       }
-      if (logoText) {
-        logoText.classList.add('text-white');
-        logoText.classList.remove('text-navy-900');
-      }
 
       // Cambiar colores de navegación a blanco
       navLinks.forEach((link) => {
@@ -757,10 +750,6 @@ import Layout from '../layouts/Layout.astro';
         header.classList.remove('bg-verde-oliva');
         header.style.backgroundColor = '';
         header.style.removeProperty('background-color');
-      }
-      if (logoText) {
-        logoText.classList.add('text-navy-900');
-        logoText.classList.remove('text-white');
       }
 
       // Restaurar colores de navegación a navy con hover navy oscuro
