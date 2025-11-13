@@ -1043,8 +1043,8 @@ import Layout from '../layouts/Layout.astro';
 
     if (scrollY > heroHeight) {
       // Header con fondo verde oliva sólido después del scroll
-      header.style.backgroundColor = '#4a4d00';
-      header.classList.remove('bg-white', 'shadow-lg', 'backdrop-blur-sm');
+      header.classList.add('bg-verde-oliva');
+      header.classList.remove('bg-white', 'shadow-lg', 'backdrop-blur-sm', 'bg-gold-100');
       logoText.classList.add('text-white');
       logoText.classList.remove('text-navy-900');
 
@@ -1062,7 +1062,7 @@ import Layout from '../layouts/Layout.astro';
 
       // Cambiar fondo del menú móvil a verde oliva sólido
       if (mobileMenu) {
-        mobileMenu.style.backgroundColor = '#4a4d00';
+        mobileMenu.style.backgroundColor = '#4a4d00 !important';
         mobileMenu.classList.remove('bg-white/95');
       }
 
@@ -1074,7 +1074,7 @@ import Layout from '../layouts/Layout.astro';
     } else {
       // Header con fondo dorado claro inicial
       header.classList.add('bg-gold-100', 'shadow-lg');
-      header.style.backgroundColor = '';
+      header.classList.remove('bg-verde-oliva');
       logoText.classList.add('text-navy-900');
       logoText.classList.remove('text-white');
 
@@ -1158,6 +1158,11 @@ import Layout from '../layouts/Layout.astro';
 
   #header.bg-navy-900 {
     background-color: rgb(15, 23, 42);
+    border-bottom: none;
+  }
+
+  #header.bg-verde-oliva {
+    background-color: #4a4d00 !important;
     border-bottom: none;
   }
 
