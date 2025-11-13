@@ -1,4 +1,5 @@
 ﻿---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -165,23 +166,44 @@ import Layout from '../layouts/Layout.astro';
       <!-- Slider Container -->
       <div class="hero-slider absolute inset-0">
         <!-- Slide 1 -->
-        <div
-          class="hero-slide active absolute inset-0 bg-[url('/images/hero/slider-1.jpg')] bg-cover bg-center"
-        >
+        <div class="hero-slide active absolute inset-0">
+          <Image
+            src="/images/hero/slider-1.jpg"
+            alt="Venta El Cruce"
+            class="absolute inset-0 h-full w-full object-cover"
+            width={1920}
+            height={1080}
+            loading="eager"
+            format="webp"
+          />
           <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/20">
           </div>
         </div>
         <!-- Slide 2 -->
-        <div
-          class="hero-slide absolute inset-0 bg-[url('/images/hero/slider-2.jpg')] bg-cover bg-center"
-        >
+        <div class="hero-slide absolute inset-0">
+          <Image
+            src="/images/hero/slider-2.jpg"
+            alt="Venta El Cruce"
+            class="absolute inset-0 h-full w-full object-cover"
+            width={1920}
+            height={1080}
+            loading="eager"
+            format="webp"
+          />
           <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/20">
           </div>
         </div>
         <!-- Slide 3 -->
-        <div
-          class="hero-slide absolute inset-0 bg-[url('/images/hero/slider-3.jpg')] bg-cover bg-center"
-        >
+        <div class="hero-slide absolute inset-0">
+          <Image
+            src="/images/hero/slider-3.jpg"
+            alt="Venta El Cruce"
+            class="absolute inset-0 h-full w-full object-cover"
+            width={1920}
+            height={1080}
+            loading="eager"
+            format="webp"
+          />
           <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/20">
           </div>
         </div>
@@ -230,10 +252,14 @@ import Layout from '../layouts/Layout.astro';
 
           <!-- Logo y botón en la parte inferior -->
           <div class="hero-footer mt-12 flex flex-col gap-4 items-center px-4 sm:flex-row sm:items-end sm:justify-between sm:px-6 lg:mt-0 lg:px-0">
-            <img
+            <Image
               src="/Logo venta el cruce.png"
               alt="Capricho Andaluz - Venta El Cruce"
               class="hero-logo h-16 w-auto sm:h-20 md:h-22 lg:h-24"
+              width={300}
+              height={100}
+              loading="eager"
+              format="webp"
             />
             <a
               href="#carta"
@@ -314,10 +340,14 @@ import Layout from '../layouts/Layout.astro';
             <div
               class="group hover:shadow-3xl relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 hover:scale-[1.02]"
             >
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&h=400&fit=crop"
                 alt="Desayunos"
                 class="h-96 w-full object-cover transition-transform duration-700 group-hover:scale-110 lg:h-[400px]"
+                width={600}
+                height={400}
+                loading="lazy"
+                format="webp"
               />
               <div
                 class="from-navy-900/20 absolute inset-0 bg-gradient-to-t to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
@@ -367,10 +397,14 @@ import Layout from '../layouts/Layout.astro';
             <div
               class="group hover:shadow-3xl relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 hover:scale-[1.02]"
             >
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop"
                 alt="Comidas"
                 class="h-96 w-full object-cover transition-transform duration-700 group-hover:scale-110 lg:h-[400px]"
+                width={600}
+                height={400}
+                loading="lazy"
+                format="webp"
               />
               <div
                 class="from-navy-900/20 absolute inset-0 bg-gradient-to-t to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
@@ -408,10 +442,14 @@ import Layout from '../layouts/Layout.astro';
           <div
             class="group relative overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl"
           >
-            <img
+            <Image
               src="/images/espacios/espacios-1.jpg"
               alt="La Barra"
               class="h-80 w-full object-cover transition-transform duration-700 group-hover:scale-110 lg:h-96"
+              width={400}
+              height={500}
+              loading="lazy"
+              format="webp"
             />
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
@@ -421,19 +459,27 @@ import Layout from '../layouts/Layout.astro';
 
           <!-- Imagen 2 - Salón Principal -->
           <div class="group relative overflow-hidden">
-            <img
+            <Image
               src="/images/espacios/espacios-2.jpg"
               alt="Salón Principal"
               class="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105 lg:h-96"
+              width={400}
+              height={500}
+              loading="lazy"
+              format="webp"
             />
           </div>
 
           <!-- Imagen 3 - Zona Privada -->
           <div class="group relative overflow-hidden">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=400&h=500&fit=crop"
               alt="Zona Privada"
               class="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105 lg:h-96"
+              width={400}
+              height={500}
+              loading="lazy"
+              format="webp"
             />
           </div>
 
@@ -476,28 +522,40 @@ import Layout from '../layouts/Layout.astro';
 
           <!-- Imagen 4 - Terrazas -->
           <div class="group relative overflow-hidden">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=500&fit=crop"
               alt="Terraza"
               class="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105 lg:h-96"
+              width={400}
+              height={500}
+              loading="lazy"
+              format="webp"
             />
           </div>
 
           <!-- Imagen 5 - Cocina -->
           <div class="group relative overflow-hidden">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=500&fit=crop"
               alt="Cocina"
               class="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105 lg:h-96"
+              width={400}
+              height={500}
+              loading="lazy"
+              format="webp"
             />
           </div>
 
           <!-- Imagen 6 - Bodega -->
           <div class="group relative overflow-hidden">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=500&fit=crop"
               alt="Bodega"
               class="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105 lg:h-96"
+              width={400}
+              height={500}
+              loading="lazy"
+              format="webp"
             />
           </div>
         </div>
@@ -1342,10 +1400,14 @@ import Layout from '../layouts/Layout.astro';
       <div class="relative overflow-hidden">
         <!-- Imagen de fondo con overlay oscuro -->
         <div class="absolute inset-0 z-0">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&h=400&fit=crop&q=80"
             alt="Platos de comida tradicional"
             class="h-full w-full object-cover"
+            width={1920}
+            height={400}
+            loading="lazy"
+            format="webp"
           />
           <div class="absolute inset-0 bg-black/65"></div>
         </div>
@@ -1547,10 +1609,14 @@ import Layout from '../layouts/Layout.astro';
           <div class="space-y-4">
             <div>
               <div class="mb-4">
-                <img
+                <Image
                   src="/Logo venta el cruce.png"
                   alt="Venta El Cruce - Capricho Andaluz"
                   class="h-16 w-auto"
+                  width={200}
+                  height={67}
+                  loading="lazy"
+                  format="webp"
                 />
               </div>
               <p class="text-base leading-relaxed text-white">
