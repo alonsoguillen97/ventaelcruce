@@ -47,7 +47,7 @@ import Layout from '../layouts/Layout.astro';
           >
           <a
             href="/galeria"
-            class="nav-link text-navy-700 hover:text-navy-900 border-b-2 border-gold-500 pb-1 text-sm font-medium tracking-wider uppercase transition-colors duration-300"
+            class="nav-link text-navy-700 hover:text-navy-900 border-gold-500 border-b-2 pb-1 text-sm font-medium tracking-wider uppercase transition-colors duration-300"
             >Galería</a
           >
 
@@ -96,7 +96,7 @@ import Layout from '../layouts/Layout.astro';
             >
             <a
               href="/galeria"
-              class="mobile-nav-link text-navy-700 hover:text-navy-900 block border-l-4 border-gold-500 py-3 pl-4 text-sm tracking-wider uppercase transition-colors duration-300"
+              class="mobile-nav-link text-navy-700 hover:text-navy-900 border-gold-500 block border-l-4 py-3 pl-4 text-sm tracking-wider uppercase transition-colors duration-300"
               >Galería</a
             >
 
@@ -134,8 +134,12 @@ import Layout from '../layouts/Layout.astro';
               Nuestra Galería
             </h1>
             <div class="bg-gold-400 mx-auto mb-8 h-1 w-32"></div>
-            <p class="mx-auto max-w-3xl text-xl leading-relaxed md:text-2xl" style="color: #fffaeb;">
-              Descubre la belleza de nuestros platos y espacios a través de esta selección de imágenes que capturan la esencia de Venta El Cruce
+            <p
+              class="mx-auto max-w-3xl text-xl leading-relaxed md:text-2xl"
+              style="color: #fffaeb;"
+            >
+              Descubre la belleza de nuestros platos y espacios a través de esta selección de
+              imágenes que capturan la esencia de Venta El Cruce
             </p>
           </div>
         </div>
@@ -149,28 +153,28 @@ import Layout from '../layouts/Layout.astro';
           <h2 class="font-elegant text-navy-900 mb-6 text-3xl font-bold">Explora Nuestro Mundo</h2>
           <p class="text-navy-700 text-lg">Navega entre nuestras diferentes categorías</p>
         </div>
-        
+
         <div class="flex flex-wrap justify-center gap-4">
           <button
-            class="gallery-filter-btn active bg-gold-500 text-navy-900 px-8 py-3 font-semibold uppercase tracking-wider transition-all duration-300 hover:bg-navy-900 hover:text-white hover:scale-105"
+            class="gallery-filter-btn active bg-gold-500 text-navy-900 hover:bg-navy-900 px-8 py-3 font-semibold tracking-wider uppercase transition-all duration-300 hover:scale-105 hover:text-white"
             data-filter="all"
           >
             Todo
           </button>
           <button
-            class="gallery-filter-btn bg-gold-100 text-navy-900 px-8 py-3 font-semibold uppercase tracking-wider transition-all duration-300 hover:bg-navy-900 hover:text-white hover:scale-105"
+            class="gallery-filter-btn bg-gold-100 text-navy-900 hover:bg-navy-900 px-8 py-3 font-semibold tracking-wider uppercase transition-all duration-300 hover:scale-105 hover:text-white"
             data-filter="platos"
           >
             Nuestros Platos
           </button>
           <button
-            class="gallery-filter-btn bg-gold-100 text-navy-900 px-8 py-3 font-semibold uppercase tracking-wider transition-all duration-300 hover:bg-navy-900 hover:text-white hover:scale-105"
+            class="gallery-filter-btn bg-gold-100 text-navy-900 hover:bg-navy-900 px-8 py-3 font-semibold tracking-wider uppercase transition-all duration-300 hover:scale-105 hover:text-white"
             data-filter="instalaciones"
           >
             Instalaciones
           </button>
           <button
-            class="gallery-filter-btn bg-gold-100 text-navy-900 px-8 py-3 font-semibold uppercase tracking-wider transition-all duration-300 hover:bg-navy-900 hover:text-white hover:scale-105"
+            class="gallery-filter-btn bg-gold-100 text-navy-900 hover:bg-navy-900 px-8 py-3 font-semibold tracking-wider uppercase transition-all duration-300 hover:scale-105 hover:text-white"
             data-filter="ambiente"
           >
             Ambiente
@@ -182,181 +186,237 @@ import Layout from '../layouts/Layout.astro';
     <!-- Main Gallery -->
     <section class="bg-white py-20">
       <div class="mx-auto max-w-7xl px-6">
-        
         <!-- Gallery Grid -->
         <div class="gallery-grid grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          
           <!-- Platos -->
-          <div class="gallery-item group relative overflow-hidden cursor-pointer" data-category="platos">
-            <img 
-              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=600&h=800&fit=crop" 
-              alt="Ensalada Gourmet" 
+          <div
+            class="gallery-item group relative cursor-pointer overflow-hidden"
+            data-category="platos"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=600&h=800&fit=crop"
+              alt="Ensalada Gourmet"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="text-xl font-bold mb-2">Ensaladas Frescas</h3>
+                <h3 class="mb-2 text-xl font-bold">Ensaladas Frescas</h3>
                 <p class="text-sm">Ingredientes de temporada</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item group relative overflow-hidden cursor-pointer" data-category="platos">
-            <img 
-              src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=600&h=800&fit=crop" 
-              alt="Hamburguesa Artesanal" 
+          <div
+            class="gallery-item group relative cursor-pointer overflow-hidden"
+            data-category="platos"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=600&h=800&fit=crop"
+              alt="Hamburguesa Artesanal"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="text-xl font-bold mb-2">Hamburguesas Gourmet</h3>
+                <h3 class="mb-2 text-xl font-bold">Hamburguesas Gourmet</h3>
                 <p class="text-sm">Carne premium y pan artesano</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item group relative overflow-hidden cursor-pointer" data-category="instalaciones">
-            <img 
-              src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600&h=800&fit=crop" 
-              alt="La Barra Principal" 
+          <div
+            class="gallery-item group relative cursor-pointer overflow-hidden"
+            data-category="instalaciones"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600&h=800&fit=crop"
+              alt="La Barra Principal"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="text-xl font-bold mb-2">La Barra Principal</h3>
+                <h3 class="mb-2 text-xl font-bold">La Barra Principal</h3>
                 <p class="text-sm">Corazón de nuestro restaurante</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item group relative overflow-hidden cursor-pointer" data-category="platos">
-            <img 
-              src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&h=800&fit=crop" 
-              alt="Bocadillo Gourmet" 
+          <div
+            class="gallery-item group relative cursor-pointer overflow-hidden"
+            data-category="platos"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&h=800&fit=crop"
+              alt="Bocadillo Gourmet"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="text-xl font-bold mb-2">Bocadillos Artesanos</h3>
+                <h3 class="mb-2 text-xl font-bold">Bocadillos Artesanos</h3>
                 <p class="text-sm">Tradición en cada bocado</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item group relative overflow-hidden cursor-pointer" data-category="ambiente">
-            <img 
-              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&h=800&fit=crop" 
-              alt="Salón Principal" 
+          <div
+            class="gallery-item group relative cursor-pointer overflow-hidden"
+            data-category="ambiente"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&h=800&fit=crop"
+              alt="Salón Principal"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="text-xl font-bold mb-2">Salón Principal</h3>
+                <h3 class="mb-2 text-xl font-bold">Salón Principal</h3>
                 <p class="text-sm">Elegancia y comodidad</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item group relative overflow-hidden cursor-pointer" data-category="platos">
-            <img 
-              src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=800&fit=crop" 
-              alt="Plato Principal" 
+          <div
+            class="gallery-item group relative cursor-pointer overflow-hidden"
+            data-category="platos"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=800&fit=crop"
+              alt="Plato Principal"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="text-xl font-bold mb-2">Especialidades</h3>
+                <h3 class="mb-2 text-xl font-bold">Especialidades</h3>
                 <p class="text-sm">Platos únicos de nuestra cocina</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item group relative overflow-hidden cursor-pointer" data-category="instalaciones">
-            <img 
-              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=800&fit=crop" 
-              alt="Cocina Profesional" 
+          <div
+            class="gallery-item group relative cursor-pointer overflow-hidden"
+            data-category="instalaciones"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=800&fit=crop"
+              alt="Cocina Profesional"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="text-xl font-bold mb-2">Nuestra Cocina</h3>
+                <h3 class="mb-2 text-xl font-bold">Nuestra Cocina</h3>
                 <p class="text-sm">Donde nace la magia culinaria</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item group relative overflow-hidden cursor-pointer" data-category="platos">
-            <img 
-              src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&h=800&fit=crop" 
-              alt="Desayuno Especial" 
+          <div
+            class="gallery-item group relative cursor-pointer overflow-hidden"
+            data-category="platos"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&h=800&fit=crop"
+              alt="Desayuno Especial"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="text-xl font-bold mb-2">Desayunos</h3>
+                <h3 class="mb-2 text-xl font-bold">Desayunos</h3>
                 <p class="text-sm">El mejor comienzo del día</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item group relative overflow-hidden cursor-pointer" data-category="ambiente">
-            <img 
-              src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=600&h=800&fit=crop" 
-              alt="Zona Privada" 
+          <div
+            class="gallery-item group relative cursor-pointer overflow-hidden"
+            data-category="ambiente"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=600&h=800&fit=crop"
+              alt="Zona Privada"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="text-xl font-bold mb-2">Zona Privada</h3>
+                <h3 class="mb-2 text-xl font-bold">Zona Privada</h3>
                 <p class="text-sm">Intimidad para ocasiones especiales</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item group relative overflow-hidden cursor-pointer" data-category="platos">
-            <img 
-              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=800&fit=crop" 
-              alt="Cena Romántica" 
+          <div
+            class="gallery-item group relative cursor-pointer overflow-hidden"
+            data-category="platos"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=800&fit=crop"
+              alt="Cena Romántica"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="text-xl font-bold mb-2">Cenas Especiales</h3>
+                <h3 class="mb-2 text-xl font-bold">Cenas Especiales</h3>
                 <p class="text-sm">Momentos únicos</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item group relative overflow-hidden cursor-pointer" data-category="instalaciones">
-            <img 
-              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=800&fit=crop" 
-              alt="Bodega" 
+          <div
+            class="gallery-item group relative cursor-pointer overflow-hidden"
+            data-category="instalaciones"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=800&fit=crop"
+              alt="Bodega"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="text-xl font-bold mb-2">Bodega</h3>
+                <h3 class="mb-2 text-xl font-bold">Bodega</h3>
                 <p class="text-sm">Selección de vinos excepcionales</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item group relative overflow-hidden cursor-pointer" data-category="ambiente">
-            <img 
-              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=800&fit=crop" 
-              alt="Terraza" 
+          <div
+            class="gallery-item group relative cursor-pointer overflow-hidden"
+            data-category="ambiente"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=800&fit=crop"
+              alt="Terraza"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="text-xl font-bold mb-2">Terraza</h3>
+                <h3 class="mb-2 text-xl font-bold">Terraza</h3>
                 <p class="text-sm">Disfruta al aire libre</p>
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
 
@@ -367,7 +427,8 @@ import Layout from '../layouts/Layout.astro';
         <h2 class="font-elegant text-gold-300 mb-8 text-4xl font-bold">¿Te Apetece Visitarnos?</h2>
         <div class="bg-gold-500 mx-auto mb-8 h-1 w-32"></div>
         <p class="text-gold-100 mx-auto mb-12 max-w-2xl text-xl leading-relaxed">
-          Ven a disfrutar de estos platos y espacios en primera persona. Te esperamos para ofrecerte una experiencia gastronómica única.
+          Ven a disfrutar de estos platos y espacios en primera persona. Te esperamos para ofrecerte
+          una experiencia gastronómica única.
         </p>
         <div class="flex justify-center">
           <a
@@ -379,21 +440,25 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
     </section>
-
   </main>
 
   <!-- Modal for Image Lightbox -->
-  <div id="lightbox-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90 p-4">
+  <div
+    id="lightbox-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90 p-4"
+  >
     <div class="relative max-h-full max-w-4xl">
       <button
         id="close-modal"
-        class="absolute -top-12 right-0 text-white text-4xl hover:text-gold-300 transition-colors duration-300"
+        class="hover:text-gold-300 absolute -top-12 right-0 text-4xl text-white transition-colors duration-300"
       >
         ×
       </button>
       <img id="modal-image" src="" alt="" class="max-h-screen max-w-full object-contain" />
-      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-        <h3 id="modal-title" class="text-white text-2xl font-bold mb-2"></h3>
+      <div
+        class="absolute right-0 bottom-0 left-0 bg-gradient-to-t from-black/80 to-transparent p-6"
+      >
+        <h3 id="modal-title" class="mb-2 text-2xl font-bold text-white"></h3>
         <p id="modal-description" class="text-gold-200"></p>
       </div>
     </div>
@@ -409,23 +474,33 @@ import Layout from '../layouts/Layout.astro';
               <div class="bg-gold-500 flex h-10 w-10 items-center justify-center">
                 <span class="text-navy-900 text-lg font-bold">VC</span>
               </div>
-              <h3 class="font-elegant text-white text-2xl font-bold tracking-wide">
+              <h3 class="font-elegant text-2xl font-bold tracking-wide text-white">
                 Venta El Cruce
               </h3>
             </div>
             <div class="bg-gold-500 mb-4 h-1 w-12"></div>
-            <p class="text-white text-base leading-relaxed">
-              Una experiencia gastronómica única que combina tradición y calidad en cada plato desde 1952.
+            <p class="text-base leading-relaxed text-white">
+              Una experiencia gastronómica única que combina tradición y calidad en cada plato desde
+              1952.
             </p>
           </div>
           <div class="flex space-x-3">
-            <a href="#" class="bg-gray-800 text-white px-3 py-2 text-sm rounded transition-all duration-300 hover:bg-gray-700">
+            <a
+              href="#"
+              class="rounded bg-gray-800 px-3 py-2 text-sm text-white transition-all duration-300 hover:bg-gray-700"
+            >
               Facebook
             </a>
-            <a href="#" class="bg-gray-800 text-white px-3 py-2 text-sm rounded transition-all duration-300 hover:bg-gray-700">
+            <a
+              href="#"
+              class="rounded bg-gray-800 px-3 py-2 text-sm text-white transition-all duration-300 hover:bg-gray-700"
+            >
               Instagram
             </a>
-            <a href="#" class="bg-gray-800 text-white px-3 py-2 text-sm rounded transition-all duration-300 hover:bg-gray-700">
+            <a
+              href="#"
+              class="rounded bg-gray-800 px-3 py-2 text-sm text-white transition-all duration-300 hover:bg-gray-700"
+            >
               TripAdvisor
             </a>
           </div>
@@ -433,34 +508,34 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="space-y-4">
           <div class="bg-gold-500 mb-4 h-1 w-12"></div>
-          <h4 class="font-elegant text-white text-lg font-semibold">Enlaces Rápidos</h4>
+          <h4 class="font-elegant text-lg font-semibold text-white">Enlaces Rápidos</h4>
           <ul class="space-y-2">
             <li>
-              <a href="/#nosotros" class="text-white hover:text-gold-300 flex items-center text-sm">
+              <a href="/#nosotros" class="hover:text-gold-300 flex items-center text-sm text-white">
                 <div class="bg-gold-500 mr-3 h-1 w-1 rounded-full"></div>
                 <span>Sobre Nosotros</span>
               </a>
             </li>
             <li>
-              <a href="/#espacios" class="text-white hover:text-gold-300 flex items-center text-sm">
+              <a href="/#espacios" class="hover:text-gold-300 flex items-center text-sm text-white">
                 <div class="bg-gold-500 mr-3 h-1 w-1 rounded-full"></div>
                 <span>Espacios</span>
               </a>
             </li>
             <li>
-              <a href="/#carta" class="text-white hover:text-gold-300 flex items-center text-sm">
+              <a href="/#carta" class="hover:text-gold-300 flex items-center text-sm text-white">
                 <div class="bg-gold-500 mr-3 h-1 w-1 rounded-full"></div>
                 <span>Nuestra Carta</span>
               </a>
             </li>
             <li>
-              <a href="/galeria" class="text-white hover:text-gold-300 flex items-center text-sm">
+              <a href="/galeria" class="hover:text-gold-300 flex items-center text-sm text-white">
                 <div class="bg-gold-500 mr-3 h-1 w-1 rounded-full"></div>
                 <span>Galería</span>
               </a>
             </li>
             <li>
-              <a href="/#contacto" class="text-white hover:text-gold-300 flex items-center text-sm">
+              <a href="/#contacto" class="hover:text-gold-300 flex items-center text-sm text-white">
                 <div class="bg-gold-500 mr-3 h-1 w-1 rounded-full"></div>
                 <span>Visítanos</span>
               </a>
@@ -470,35 +545,36 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="space-y-4">
           <div class="bg-gold-500 mb-4 h-1 w-12"></div>
-          <h4 class="font-elegant text-white text-lg font-semibold">Contacto</h4>
+          <h4 class="font-elegant text-lg font-semibold text-white">Contacto</h4>
           <div class="space-y-2">
-            <div class="text-white text-sm">
+            <div class="text-sm text-white">
               <a href="tel:+34956235209" class="hover:text-gold-300">956 235 209</a>
             </div>
-            <div class="text-white text-sm">
+            <div class="text-sm text-white">
               <span>Cañada Ancha, 11150 Vejer de la Frontera, Cádiz</span>
             </div>
-            <div class="text-white text-sm">
+            <div class="text-sm text-white">
               <span>Mar-Dom: 13:00-16:00 | 20:00-23:30</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="mt-8 pt-6 border-t border-gray-700">
+      <div class="mt-8 border-t border-gray-700 pt-6">
         <div class="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
-          <div class="text-white text-center md:text-left">
+          <div class="text-center text-white md:text-left">
             <p class="text-sm">
-              &copy; 2024 <span class="text-gold-300 font-semibold">Venta El Cruce</span>. Todos los derechos reservados.
+              &copy; 2024 <span class="text-gold-300 font-semibold">Venta El Cruce</span>. Todos los
+              derechos reservados.
             </p>
           </div>
           <div class="flex items-center justify-center space-x-2">
-            <span class="text-gray-400 text-xs">Desarrollado por</span>
-            <a 
-              href="https://atlantecdigital.com/" 
-              target="_blank" 
+            <span class="text-xs text-gray-400">Desarrollado por</span>
+            <a
+              href="https://atlantecdigital.com/"
+              target="_blank"
               rel="noopener noreferrer"
-              class="text-gold-400 hover:text-gold-300 text-sm font-semibold transition-colors duration-300 no-underline border-b border-gold-400/40 hover:border-gold-300 pb-0.5"
+              class="text-gold-400 hover:text-gold-300 border-gold-400/40 hover:border-gold-300 border-b pb-0.5 text-sm font-semibold no-underline transition-colors duration-300"
             >
               Atlantec Digital
             </a>
@@ -507,7 +583,6 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </footer>
-
 </Layout>
 
 <!-- Scripts -->
@@ -531,22 +606,22 @@ import Layout from '../layouts/Layout.astro';
   const filterBtns = document.querySelectorAll('.gallery-filter-btn');
   const galleryItems = document.querySelectorAll('.gallery-item');
 
-  filterBtns.forEach(btn => {
+  filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
       const filter = (btn as HTMLElement).dataset.filter;
 
       // Update active button - remove active state from all buttons first
-      filterBtns.forEach(b => {
+      filterBtns.forEach((b) => {
         b.classList.remove('active', 'bg-gold-500');
         b.classList.add('bg-gold-100');
       });
-      
+
       // Add active state to clicked button
       btn.classList.add('active', 'bg-gold-500');
       btn.classList.remove('bg-gold-100');
 
       // Filter gallery items
-      galleryItems.forEach(item => {
+      galleryItems.forEach((item) => {
         const category = (item as HTMLElement).dataset.category;
         if (filter === 'all' || category === filter) {
           (item as HTMLElement).style.display = 'block';
@@ -572,11 +647,11 @@ import Layout from '../layouts/Layout.astro';
   const modalDescription = document.getElementById('modal-description');
   const closeModal = document.getElementById('close-modal');
 
-  galleryItems.forEach(item => {
+  galleryItems.forEach((item) => {
     item.addEventListener('click', () => {
       const img = item.querySelector('img') as HTMLImageElement;
       if (!img || !modalImage || !modalTitle || !modalDescription || !modal) return;
-      
+
       const title = item.querySelector('h3')?.textContent || '';
       const description = item.querySelector('p')?.textContent || '';
 
@@ -584,7 +659,7 @@ import Layout from '../layouts/Layout.astro';
       modalImage.alt = img.alt;
       modalTitle.textContent = title;
       modalDescription.textContent = description;
-      
+
       modal.classList.remove('hidden');
       modal.classList.add('flex');
       document.body.style.overflow = 'hidden';
@@ -714,7 +789,7 @@ import Layout from '../layouts/Layout.astro';
   // Ejecutar al cargar y al hacer scroll
   window.addEventListener('scroll', updateHeader);
   window.addEventListener('load', updateHeader);
-  
+
   // DEBUGGING: Forzar color verde después de 3 segundos
   setTimeout(() => {
     console.log('Galería: Forcing verde oliva color for debugging');
@@ -769,7 +844,9 @@ import Layout from '../layouts/Layout.astro';
 
   /* Gallery item transitions */
   .gallery-item {
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
   }
 
   /* Gallery filter button styles */
