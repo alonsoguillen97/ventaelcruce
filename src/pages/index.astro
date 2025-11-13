@@ -251,7 +251,9 @@ import Layout from '../layouts/Layout.astro';
           </div>
 
           <!-- Logo y botón en la parte inferior -->
-          <div class="hero-footer mt-12 flex flex-col gap-4 items-center px-4 sm:flex-row sm:items-end sm:justify-between sm:px-6 lg:mt-0 lg:px-0">
+          <div
+            class="hero-footer mt-12 flex flex-col items-center gap-4 px-4 sm:flex-row sm:items-end sm:justify-between sm:px-6 lg:mt-0 lg:px-0"
+          >
             <Image
               src="/Logo venta el cruce.png"
               alt="Capricho Andaluz - Venta El Cruce"
@@ -263,7 +265,7 @@ import Layout from '../layouts/Layout.astro';
             />
             <a
               href="#carta"
-              class="hero-button bg-gold-500 hover:bg-gold-400 border-gold-500 hover:border-gold-400 rounded-sm border-2 px-6 py-2.5 text-xs font-semibold tracking-wider text-white uppercase shadow-xl transition-all duration-300 hover:scale-105 hover:text-white sm:px-8 sm:py-3 sm:text-sm md:px-10 md:py-4 md:text-base whitespace-nowrap"
+              class="hero-button bg-gold-500 hover:bg-gold-400 border-gold-500 hover:border-gold-400 rounded-sm border-2 px-6 py-2.5 text-xs font-semibold tracking-wider whitespace-nowrap text-white uppercase shadow-xl transition-all duration-300 hover:scale-105 hover:text-white sm:px-8 sm:py-3 sm:text-sm md:px-10 md:py-4 md:text-base"
             >
               Descubrir Carta
             </a>
@@ -362,13 +364,23 @@ import Layout from '../layouts/Layout.astro';
                 <span style="color: #4a4d00;">Desayunos</span>
               </h2>
               <p class="mb-6 text-lg leading-relaxed text-gray-700">
-                En Venta El Cruce las mañanas comienzan con aroma a <strong style="color: #4a4d00;">pan tostado</strong>, <strong style="color: #4a4d00;">café recién hecho</strong> y el murmullo tranquilo de quienes disfrutan empezar el día sin prisas.
+                En Venta El Cruce las mañanas comienzan con aroma a <strong style="color: #4a4d00;"
+                  >pan tostado</strong
+                >, <strong style="color: #4a4d00;">café recién hecho</strong> y el murmullo tranquilo
+                de quienes disfrutan empezar el día sin prisas.
               </p>
               <p class="mb-6 text-lg leading-relaxed text-gray-700">
-                Nuestros desayunos son un homenaje al <strong style="color: #4a4d00;">sabor andaluz de siempre</strong>: tostones dorados, café, <strong style="color: #4a4d00;">jamón ibérico</strong>, <strong style="color: #4a4d00;">mermeladas caseras</strong> que recuerdan a las de la abuela y una gran variedad de ingredientes que hará de un desayuno una <strong style="color: #4a4d00;">experiencia única</strong>.
+                Nuestros desayunos son un homenaje al <strong style="color: #4a4d00;"
+                  >sabor andaluz de siempre</strong
+                >: tostones dorados, café, <strong style="color: #4a4d00;">jamón ibérico</strong>, <strong
+                  style="color: #4a4d00;">mermeladas caseras</strong
+                > que recuerdan a las de la abuela y una gran variedad de ingredientes que hará de un
+                desayuno una <strong style="color: #4a4d00;">experiencia única</strong>.
               </p>
               <p class="text-lg leading-relaxed text-gray-700">
-                Aquí, cada bocado es una invitación a saborear <strong style="color: #4a4d00;">la calma, la tradición y el placer de lo sencillo</strong>.
+                Aquí, cada bocado es una invitación a saborear <strong style="color: #4a4d00;"
+                  >la calma, la tradición y el placer de lo sencillo</strong
+                >.
               </p>
             </div>
           </div>
@@ -382,13 +394,21 @@ import Layout from '../layouts/Layout.astro';
                 <span style="color: #4a4d00;">Comidas</span>
               </h2>
               <p class="mb-6 text-lg leading-relaxed text-gray-700">
-                Cuando llega la hora de comer, Venta El Cruce se llena del olor de los <strong style="color: #4a4d00;">guisos caseros</strong> y del <strong style="color: #4a4d00;">ambiente familiar</strong> que tanto nos caracteriza.
+                Cuando llega la hora de comer, Venta El Cruce se llena del olor de los <strong
+                  style="color: #4a4d00;">guisos caseros</strong
+                > y del <strong style="color: #4a4d00;">ambiente familiar</strong> que tanto nos caracteriza.
               </p>
               <p class="mb-6 text-lg leading-relaxed text-gray-700">
-                Nuestros platos, preparados con <strong style="color: #4a4d00;">productos de máxima calidad</strong> y el mimo de siempre, son una <strong style="color: #4a4d00;">celebración de la cocina andaluza más auténtica</strong>: sabores profundos, recetas de toda la vida y un toque de alma en cada cucharada.
+                Nuestros platos, preparados con <strong style="color: #4a4d00;"
+                  >productos de máxima calidad</strong
+                > y el mimo de siempre, son una <strong style="color: #4a4d00;"
+                  >celebración de la cocina andaluza más auténtica</strong
+                >: sabores profundos, recetas de toda la vida y un toque de alma en cada cucharada.
               </p>
               <p class="text-lg leading-relaxed text-gray-700">
-                Porque aquí, más que servir comida, compartimos <strong style="color: #4a4d00;">momentos que saben a hogar</strong>.
+                Porque aquí, más que servir comida, compartimos <strong style="color: #4a4d00;"
+                  >momentos que saben a hogar</strong
+                >.
               </p>
             </div>
           </div>
@@ -583,7 +603,481 @@ import Layout from '../layouts/Layout.astro';
           </p>
         </div>
 
-        <!-- Grid de 3 columnas para las categorías principales -->
+        <!-- 1. SECCIÓN DE DESAYUNOS -->
+        <div class="mb-16 p-8">
+          <div class="mb-8 text-center">
+            <div class="bg-gold-500 mx-auto mb-4 h-2 w-24"></div>
+            <h3 class="font-elegant text-navy-900 mb-4 text-3xl font-bold tracking-wider uppercase">
+              Especialidades de Desayuno
+            </h3>
+            <div class="bg-gold-500 mx-auto h-1 w-32"></div>
+            <p class="text-navy-700 mt-4 text-lg">Desayunos y Especialidades de la Casa</p>
+            <p class="text-navy-600 text-base">
+              Comienza el día con un toque de tradición y modernidad
+            </p>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2">
+            <div class="p-6">
+              <h4 class="text-navy-900 mb-4 text-xl font-bold">Tostadas De Siempre:</h4>
+              <p class="text-navy-600 mb-4">Viena, Rebanada pan de Campo o Mollete Artesano.</p>
+              <div class="space-y-2">
+                <div class="flex justify-between">
+                  <span class="text-navy-700 font-semibold">A elegir:</span>
+                  <span></span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-navy-600"
+                    >Manteca Colorada, Zurrapa de Vejer, Sobrasada, AOVE,
+                  </span>
+                  <span></span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-navy-600"
+                    >Paté de Jamón York, Tomate triturado, Paté Iberico, Mermelada.</span
+                  >
+                  <span></span>
+                </div>
+                <div class="relative mt-4 flex items-center justify-between pt-3">
+                  <span class="text-navy-700 font-semibold">Media: 1,50€ / Entera: 2,50€</span>
+                </div>
+                <svg
+                  class="mt-3"
+                  width="60%"
+                  height="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 300 12"
+                >
+                  <path
+                    d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                    stroke="#4a4d00"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="space-y-4">
+                <div class="relative pb-2">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="text-navy-900 font-semibold">Las Delicias:</h4>
+                      <p class="text-navy-600 text-sm">
+                        Mollete Tostado con Aguacate, Tomate y Jamón Serrano
+                      </p>
+                    </div>
+                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">6.00€</span>
+                  </div>
+                  <svg
+                    class="mt-3"
+                    width="60%"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 12"
+                  >
+                    <path
+                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                      stroke="#4a4d00"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"></path>
+                  </svg>
+                </div>
+
+                <div class="relative pb-2">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="text-navy-900 font-semibold">Huevos fritos con Jamón Ibérico</h4>
+                    </div>
+                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">8.00€</span>
+                  </div>
+                  <svg
+                    class="mt-3"
+                    width="60%"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 12"
+                  >
+                    <path
+                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                      stroke="#4a4d00"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"></path>
+                  </svg>
+                </div>
+
+                <div class="relative pb-2">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="text-navy-900 font-semibold">El cabrero:</h4>
+                      <p class="text-navy-600 text-sm">
+                        Rebanada de campo tostada con queso de rulo de cabra fundido sobre miel y
+                        semilla de calabacín
+                      </p>
+                    </div>
+                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">6.00€</span>
+                  </div>
+                  <svg
+                    class="mt-3"
+                    width="60%"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 12"
+                  >
+                    <path
+                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                      stroke="#4a4d00"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"></path>
+                  </svg>
+                </div>
+
+                <div class="relative pb-2">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="text-navy-900 font-semibold">
+                        Yogurt natural con miel de flor de la Janda y nueces
+                      </h4>
+                    </div>
+                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">4.00€</span>
+                  </div>
+                  <svg
+                    class="mt-3"
+                    width="60%"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 12"
+                  >
+                    <path
+                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                      stroke="#4a4d00"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"></path>
+                  </svg>
+                </div>
+
+                <div class="relative pb-2">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="text-navy-900 font-semibold">
+                        Aguacate con limón y sal de escamas
+                      </h4>
+                    </div>
+                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">3.00€</span>
+                  </div>
+                  <svg
+                    class="mt-3"
+                    width="60%"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 12"
+                  >
+                    <path
+                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                      stroke="#4a4d00"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"></path>
+                  </svg>
+                </div>
+
+                <div class="relative pb-2">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="text-navy-900 font-semibold">
+                        Plato de Jamón Ibérico de Guijuelo
+                      </h4>
+                    </div>
+                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">5.00€</span>
+                  </div>
+                  <svg
+                    class="mt-3"
+                    width="60%"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 12"
+                  >
+                    <path
+                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                      stroke="#4a4d00"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"></path>
+                  </svg>
+                </div>
+
+                <div class="relative pb-2">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="text-navy-900 font-semibold">Plato de Jamón Serrano de Bodega</h4>
+                    </div>
+                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">3.00€</span>
+                  </div>
+                  <svg
+                    class="mt-3"
+                    width="60%"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 300 12"
+                  >
+                    <path
+                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
+                      stroke="#4a4d00"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"></path>
+                  </svg>
+                </div>
+
+                <div class="relative pb-2">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="text-navy-900 font-semibold">Plato de Jamón York Cocido</h4>
+                    </div>
+                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">2.00€</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. SECCIÓN DE ENTRANTES TIERRA -->
+        <div class="mb-16">
+          <div class="bg-navy-900 mb-8 p-8 text-center">
+            <div class="bg-gold-500 mx-auto mb-4 h-2 w-24"></div>
+            <h3 class="font-elegant text-gold-300 mb-4 text-3xl font-bold tracking-wider uppercase">
+              Entrantes Tierra
+            </h3>
+            <div class="bg-gold-500 mx-auto h-1 w-32"></div>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Surtido de Charcutería Ibérica</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold"
+                  >14.00€</span
+                >
+              </div>
+              <p class="text-navy-600 text-sm leading-relaxed">
+                Jamón, Chorizo, Salchichón, Lomo, Morcilla
+              </p>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Carne Mechada Casera</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">6.00€</span
+                >
+              </div>
+              <p class="text-navy-600 text-sm leading-relaxed">Con Lima y Sal de Escamas</p>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Ración Queso Manchego Curado</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">7.00€</span
+                >
+              </div>
+              <p class="text-navy-600 text-sm leading-relaxed">En AOVE y hierbas silvestres</p>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Patatas Bravas</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">5.00€</span
+                >
+              </div>
+              <p class="text-navy-600 text-sm leading-relaxed">
+                Doradas y acompañadas de una salsa brava ligeramente picante
+              </p>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Ensaladilla Rusa con Atún</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">3.50€</span
+                >
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">
+                  Ensaladilla Rusa con Pinchitos de Atún
+                </h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">5.00€</span
+                >
+              </div>
+              <p class="text-navy-600 text-sm leading-relaxed">De la Almadraba de Barbate</p>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Boquerones en Vinagre</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">6.00€</span
+                >
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Pincho de Atún con Queso Payoyo</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold"
+                  >3.50€/2und</span
+                >
+              </div>
+              <p class="text-navy-600 text-sm leading-relaxed">Dados de atún en AOVE con queso</p>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">
+                  Albóndigas de Carne del Retín en salsa de tomate
+                </h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">6.00€</span
+                >
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Pisto Casero</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">6.00€</span
+                >
+              </div>
+              <p class="text-navy-600 text-sm leading-relaxed">
+                Verdura asada en salsa de tomate, hierbas del campo y papas
+              </p>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Huevos a la Flamenca</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">9.00€</span
+                >
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Carne al toro</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">6.00€</span
+                >
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Carrillada a la Riojana</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">6.00€</span
+                >
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Gambas al Ajillo</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold"
+                  >12.00€</span
+                >
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Croquetas de Puchero</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold"
+                  >7.00€ / 12.00€</span
+                >
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Croquetas de Gambas al ajillo</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold"
+                  >7.00€ / 12.00€</span
+                >
+              </div>
+              <p class="text-navy-600 text-sm leading-relaxed">En cazuela de barro</p>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Croquetas de Jamón Ibérico</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold"
+                  >7.00€ / 12.00€</span
+                >
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Tortillas de camarones</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold"
+                  >2.00€/und</span
+                >
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Calamares fritos</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold"
+                  >8.00€ / 14.00€</span
+                >
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">Chorizo Flameado</h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">6.00€</span
+                >
+              </div>
+              <p class="text-navy-600 text-sm leading-relaxed">
+                Choricito picante flameado en salsa Brandy sobre rebanada
+              </p>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">
+                  Mojama curada con almendras fritas y aliño cítrico
+                </h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">6.00€</span
+                >
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="mb-2 flex items-start justify-between">
+                <h4 class="text-navy-900 text-lg font-semibold">
+                  Queso Rulo de Cabra fundido con miel y nueces
+                </h4>
+                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">7.00€</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Grid de 3 columnas para Ensaladas, Bocadillos y Los Burgers -->
         <div class="mb-16 grid gap-8 lg:grid-cols-3">
           <!-- ENSALADAS -->
           <div class="p-8">
@@ -602,7 +1096,7 @@ import Layout from '../layouts/Layout.astro';
                   <div class="flex-1">
                     <h4 class="text-navy-900 text-base font-semibold">Ensalada de Tomate</h4>
                     <p class="text-navy-600 text-sm leading-relaxed">
-                      con jamón, AOVE y sal de Cádiz
+                      Con ajo, AOVE y sal de Cádiz
                     </p>
                   </div>
                   <span class="bg-navy-900 text-gold-300 ml-3 px-3 py-1 text-sm font-bold"
@@ -658,7 +1152,7 @@ import Layout from '../layouts/Layout.astro';
                   <div class="flex-1">
                     <h4 class="text-navy-900 text-base font-semibold">La Cabrera</h4>
                     <p class="text-navy-600 text-sm leading-relaxed">
-                      Con queso de cabra en rullo, miel y nueces
+                      Con queso de cabra en rulo, miel y nueces
                     </p>
                   </div>
                   <span class="bg-navy-900 text-gold-300 ml-3 px-3 py-1 text-sm font-bold"
@@ -688,7 +1182,7 @@ import Layout from '../layouts/Layout.astro';
                       1. El Charcutero, a elegir:
                     </h4>
                     <p class="text-navy-600 text-sm leading-relaxed">
-                      Jamón Ibérico, Lomo, Salchichón, Chorizo, Carne y Queso Manchego
+                      Jamón Ibérico, Serrano, Salchichón, Chorizo, Carne y Queso Manchego
                     </p>
                   </div>
                   <span class="bg-navy-900 text-gold-300 ml-3 px-3 py-1 text-sm font-bold"
@@ -717,7 +1211,7 @@ import Layout from '../layouts/Layout.astro';
                   <div class="flex-1">
                     <h4 class="text-navy-900 text-base font-semibold">2. Serranito</h4>
                     <p class="text-navy-600 text-sm leading-relaxed">
-                      Ternasco asado con lomo Duroc, pimiento frito, Jamón, salsa verde
+                      Filetes sabrosos lomo Duroc, pimiento frito, Jamón, salsa verde
                     </p>
                   </div>
                   <span class="bg-navy-900 text-gold-300 ml-3 px-3 py-1 text-sm font-bold"
@@ -773,7 +1267,7 @@ import Layout from '../layouts/Layout.astro';
               <div class="relative pb-3">
                 <div class="flex items-start justify-between">
                   <div class="flex-1">
-                    <h4 class="text-navy-900 text-base font-semibold">4. Camarero</h4>
+                    <h4 class="text-navy-900 text-base font-semibold">4. Canutero</h4>
                     <p class="text-navy-600 text-sm leading-relaxed">
                       Tomate y Caballa, pimientos, aceite de Oliva, ensalada y tomate
                     </p>
@@ -884,8 +1378,8 @@ import Layout from '../layouts/Layout.astro';
                   <div class="flex-1">
                     <h4 class="text-navy-900 text-base font-semibold">LA JANDA</h4>
                     <p class="text-navy-600 text-sm leading-relaxed">
-                      Carne picada de ternera RETINTA de la Janda, bacon, cheddar, tomate, cebolla y
-                      el plancha, ali-oli y Molletes crujiente del campo
+                      Carne picada de ternera RETINTA de la Janda, bacon, cheddar, tomate, cebolla a
+                      la plancha, ali-oli y Molletes crujiente del campo
                     </p>
                   </div>
                   <span class="bg-navy-900 text-gold-300 ml-3 px-3 py-1 text-sm font-bold"
@@ -914,8 +1408,7 @@ import Layout from '../layouts/Layout.astro';
                   <div class="flex-1">
                     <h4 class="text-navy-900 text-base font-semibold">SALCHICHA CRIOLLA</h4>
                     <p class="text-navy-600 text-sm leading-relaxed">
-                      Molletes, cebolla, lechuga, tomate, patatas, churrasco y salsa picante
-                      especial
+                      Mollete, salchichas Criollas asadas, chucrut y salsa picante especial
                     </p>
                   </div>
                   <span class="bg-navy-900 text-gold-300 ml-3 px-3 py-1 text-sm font-bold"
@@ -927,137 +1420,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
 
-        <!-- SECCIÓN DE ENTRANTES TIERRA -->
-        <div class="mb-16">
-          <div class="bg-navy-900 mb-8 p-8 text-center">
-            <div class="bg-gold-500 mx-auto mb-4 h-2 w-24"></div>
-            <h3 class="font-elegant text-gold-300 mb-4 text-3xl font-bold tracking-wider uppercase">
-              Entrantes Tierra
-            </h3>
-            <div class="bg-gold-500 mx-auto h-1 w-32"></div>
-          </div>
-
-          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div class="p-6">
-              <div class="mb-2 flex items-start justify-between">
-                <h4 class="text-navy-900 text-lg font-semibold">Surtido de Charcutería Ibérica</h4>
-                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold"
-                  >14.00€</span
-                >
-              </div>
-              <p class="text-navy-600 text-sm leading-relaxed">
-                Jamón, Chorizo, Salchichón, Lomo, Morcilla
-              </p>
-            </div>
-
-            <div class="p-6">
-              <div class="mb-2 flex items-start justify-between">
-                <h4 class="text-navy-900 text-lg font-semibold">Carne Mechada Casera</h4>
-                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">6.00€</span
-                >
-              </div>
-              <p class="text-navy-600 text-sm leading-relaxed">
-                Con Carne Ibérica y Los Escabeches
-              </p>
-            </div>
-
-            <div class="p-6">
-              <div class="mb-2 flex items-start justify-between">
-                <h4 class="text-navy-900 text-lg font-semibold">Ración Queso Manchego Curado</h4>
-                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">7.00€</span
-                >
-              </div>
-              <p class="text-navy-600 text-sm leading-relaxed">En AOVE y hierbas silvestres</p>
-            </div>
-
-            <div class="p-6">
-              <div class="mb-2 flex items-start justify-between">
-                <h4 class="text-navy-900 text-lg font-semibold">Patatas Bravas</h4>
-                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">5.00€</span
-                >
-              </div>
-              <p class="text-navy-600 text-sm leading-relaxed">
-                Doradas y acompañadas de una salsa brava ligeramente picante
-              </p>
-            </div>
-
-            <div class="p-6">
-              <div class="mb-2 flex items-start justify-between">
-                <h4 class="text-navy-900 text-lg font-semibold">Morcillin Ruso con Atún</h4>
-                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">3.50€</span
-                >
-              </div>
-              <p class="text-navy-600 text-sm leading-relaxed">En Pan con Atún</p>
-            </div>
-
-            <div class="p-6">
-              <div class="mb-2 flex items-start justify-between">
-                <h4 class="text-navy-900 text-lg font-semibold">
-                  Ensaladilla Rusa con Piñoncitos de Atún
-                </h4>
-                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">5.00€</span
-                >
-              </div>
-              <p class="text-navy-600 text-sm leading-relaxed">De la Almadrina de Barbate</p>
-            </div>
-
-            <div class="p-6">
-              <div class="mb-2 flex items-start justify-between">
-                <h4 class="text-navy-900 text-lg font-semibold">Boquerones en Vinagre</h4>
-                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">6.00€</span
-                >
-              </div>
-            </div>
-
-            <div class="p-6">
-              <div class="mb-2 flex items-start justify-between">
-                <h4 class="text-navy-900 text-lg font-semibold">Pincho de Atún con Queso Payoyo</h4>
-                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">3.50€</span
-                >
-              </div>
-              <p class="text-navy-600 text-sm leading-relaxed">Pincho de atún en AOVE con queso</p>
-            </div>
-
-            <div class="p-6">
-              <div class="mb-2 flex items-start justify-between">
-                <h4 class="text-navy-900 text-lg font-semibold">
-                  Albóndigas de Carne del Monte en salsa de tomate
-                </h4>
-                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">6.00€</span
-                >
-              </div>
-            </div>
-
-            <div class="p-6">
-              <div class="mb-2 flex items-start justify-between">
-                <h4 class="text-navy-900 text-lg font-semibold">Pisto Casero</h4>
-                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">6.00€</span
-                >
-              </div>
-              <p class="text-navy-600 text-sm leading-relaxed">
-                Verdura asada en salsa de tomate, hierbas del campo y pápas
-              </p>
-            </div>
-
-            <div class="p-6">
-              <div class="mb-2 flex items-start justify-between">
-                <h4 class="text-navy-900 text-lg font-semibold">Huevos a la Flamenca</h4>
-                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">9.00€</span
-                >
-              </div>
-            </div>
-
-            <div class="p-6">
-              <div class="mb-2 flex items-start justify-between">
-                <h4 class="text-navy-900 text-lg font-semibold">Carne al toro</h4>
-                <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold">6.00€</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SECCIÓN DE PLATOS COMBINADOS -->
+        <!-- 4. SECCIÓN DE PLATOS COMBINADOS -->
         <div class="mb-16">
           <div class="bg-navy-900 mb-8 p-8 text-center">
             <div class="bg-gold-500 mx-auto mb-4 h-2 w-24"></div>
@@ -1093,15 +1456,14 @@ import Layout from '../layouts/Layout.astro';
             <div class="p-6">
               <div class="mb-2 flex items-start justify-between">
                 <h4 class="text-navy-900 text-lg font-semibold">
-                  Carne al Toro con Rebanadas de Chorizo
+                  Carne al Toro con Reducción de Oloroso
                 </h4>
                 <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold"
                   >15.00€</span
                 >
               </div>
               <p class="text-navy-600 text-sm leading-relaxed">
-                Ternera cárne estofada en un intenso caldo con vino rancio y especias con papas
-                pareja
+                Tierna carne estofada en un intenso caldo con vino oloroso y laurel, papas bravas
               </p>
             </div>
 
@@ -1114,7 +1476,7 @@ import Layout from '../layouts/Layout.astro';
               </div>
               <p class="text-navy-600 text-sm leading-relaxed">
                 De cerdo suave, cocinado en salsa de vino tinto y hierbas silvestres del campo con
-                papas pareja
+                papas fritas
               </p>
             </div>
 
@@ -1130,7 +1492,7 @@ import Layout from '../layouts/Layout.astro';
 
             <div class="p-6">
               <div class="mb-2 flex items-start justify-between">
-                <h4 class="text-navy-900 text-lg font-semibold">Pollo al Ajillo en Horno</h4>
+                <h4 class="text-navy-900 text-lg font-semibold">Pollo al Ajillo del Horno</h4>
                 <span class="bg-navy-900 text-gold-300 ml-3 px-4 py-2 text-lg font-bold"
                   >16.00€</span
                 >
@@ -1138,256 +1500,6 @@ import Layout from '../layouts/Layout.astro';
               <p class="text-navy-600 text-sm leading-relaxed">
                 En cazuela de barro, ajo frito, hierbas, vino fino y patatas fritas
               </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- SECCIÓN DE DESAYUNOS -->
-        <div class="mb-16 p-8">
-          <div class="mb-8 text-center">
-            <div class="bg-gold-500 mx-auto mb-4 h-2 w-24"></div>
-            <h3 class="font-elegant text-navy-900 mb-4 text-3xl font-bold tracking-wider uppercase">
-              Especialidades de Desayuno
-            </h3>
-            <div class="bg-gold-500 mx-auto h-1 w-32"></div>
-            <p class="text-navy-700 mt-4 text-lg">Desayunos y Especialidades de la Casa</p>
-            <p class="text-navy-600 text-base">
-              Comienza el día con un toque de tradición y frescura
-            </p>
-          </div>
-
-          <div class="grid gap-6 md:grid-cols-2">
-            <div class="p-6">
-              <h4 class="text-navy-900 mb-4 text-xl font-bold">Tostadas De Siempre:</h4>
-              <p class="text-navy-600 mb-4">Viena, Rebanada pan de Campo o Molletes Artesano.</p>
-              <div class="space-y-2">
-                <div class="flex justify-between">
-                  <span class="text-navy-700 font-semibold">A elegir:</span>
-                  <span></span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="text-navy-600"
-                    >Manteca Colorada, Zarzapa de Vejer, Sobrasada, AOVE...</span
-                  >
-                  <span></span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="text-navy-600"
-                    >Paté del Chef, York, Tomate triturado, Paté Carranzo Artesanal</span
-                  >
-                  <span></span>
-                </div>
-                <div class="relative mt-4 flex items-center justify-between pt-3">
-                  <span class="text-navy-700 font-semibold">Media: 1,50€ / Entera: 2,50€</span>
-                </div>
-                <svg
-                  class="mt-3"
-                  width="60%"
-                  height="12"
-                  xmlns="http://www.w3.org/2000/svg"
-                  preserveAspectRatio="none"
-                  viewBox="0 0 300 12"
-                >
-                  <path
-                    d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
-                    stroke="#4a4d00"
-                    stroke-width="2.5"
-                    fill="none"
-                    stroke-linecap="round"></path>
-                </svg>
-              </div>
-            </div>
-
-            <div class="p-6">
-              <div class="space-y-4">
-                <div class="relative pb-2">
-                  <div class="flex items-start justify-between">
-                    <div class="flex-1">
-                      <h4 class="text-navy-900 font-semibold">Las Delicias:</h4>
-                      <p class="text-navy-600 text-sm">
-                        Molletes Tostado con Aguacate, Tomate y Jamón Serrano
-                      </p>
-                    </div>
-                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">6.00€</span>
-                  </div>
-                  <svg
-                    class="mt-3"
-                    width="60%"
-                    height="12"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    viewBox="0 0 300 12"
-                  >
-                    <path
-                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
-                      stroke="#4a4d00"
-                      stroke-width="2.5"
-                      fill="none"
-                      stroke-linecap="round"></path>
-                  </svg>
-                </div>
-
-                <div class="relative pb-2">
-                  <div class="flex items-start justify-between">
-                    <div class="flex-1">
-                      <h4 class="text-navy-900 font-semibold">Huevos fritos con Jamón Ibérico</h4>
-                    </div>
-                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">8.00€</span>
-                  </div>
-                  <svg
-                    class="mt-3"
-                    width="60%"
-                    height="12"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    viewBox="0 0 300 12"
-                  >
-                    <path
-                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
-                      stroke="#4a4d00"
-                      stroke-width="2.5"
-                      fill="none"
-                      stroke-linecap="round"></path>
-                  </svg>
-                </div>
-
-                <div class="relative pb-2">
-                  <div class="flex items-start justify-between">
-                    <div class="flex-1">
-                      <h4 class="text-navy-900 font-semibold">El Ranchero:</h4>
-                      <p class="text-navy-600 text-sm">
-                        Rebanada de campo tostada con queso de rulo de cabra fundido sobre una
-                        semilla de sésamo y calabacín
-                      </p>
-                    </div>
-                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">6.00€</span>
-                  </div>
-                  <svg
-                    class="mt-3"
-                    width="60%"
-                    height="12"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    viewBox="0 0 300 12"
-                  >
-                    <path
-                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
-                      stroke="#4a4d00"
-                      stroke-width="2.5"
-                      fill="none"
-                      stroke-linecap="round"></path>
-                  </svg>
-                </div>
-
-                <div class="relative pb-2">
-                  <div class="flex items-start justify-between">
-                    <div class="flex-1">
-                      <h4 class="text-navy-900 font-semibold">
-                        Aguacate con limón y sal de escamas
-                      </h4>
-                    </div>
-                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">3.00€</span>
-                  </div>
-                  <svg
-                    class="mt-3"
-                    width="60%"
-                    height="12"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    viewBox="0 0 300 12"
-                  >
-                    <path
-                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
-                      stroke="#4a4d00"
-                      stroke-width="2.5"
-                      fill="none"
-                      stroke-linecap="round"></path>
-                  </svg>
-                </div>
-
-                <div class="relative pb-2">
-                  <div class="flex items-start justify-between">
-                    <div class="flex-1">
-                      <h4 class="text-navy-900 font-semibold">
-                        Plato de Jamón Ibérico en Crujiente
-                      </h4>
-                    </div>
-                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">5.00€</span>
-                  </div>
-                  <svg
-                    class="mt-3"
-                    width="60%"
-                    height="12"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    viewBox="0 0 300 12"
-                  >
-                    <path
-                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
-                      stroke="#4a4d00"
-                      stroke-width="2.5"
-                      fill="none"
-                      stroke-linecap="round"></path>
-                  </svg>
-                </div>
-
-                <div class="relative pb-2">
-                  <div class="flex items-start justify-between">
-                    <div class="flex-1">
-                      <h4 class="text-navy-900 font-semibold">Plato de Jamón Serrano en Bodega</h4>
-                    </div>
-                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">2.00€</span>
-                  </div>
-                  <svg
-                    class="mt-3"
-                    width="60%"
-                    height="12"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    viewBox="0 0 300 12"
-                  >
-                    <path
-                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
-                      stroke="#4a4d00"
-                      stroke-width="2.5"
-                      fill="none"
-                      stroke-linecap="round"></path>
-                  </svg>
-                </div>
-
-                <div class="relative pb-2">
-                  <div class="flex items-start justify-between">
-                    <div class="flex-1">
-                      <h4 class="text-navy-900 font-semibold">Plato de Jamón York Cocido</h4>
-                    </div>
-                    <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">2.00€</span>
-                  </div>
-                  <svg
-                    class="mt-3"
-                    width="60%"
-                    height="12"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    viewBox="0 0 300 12"
-                  >
-                    <path
-                      d="M 0 6 Q 37.5 0, 75 6 T 150 6 T 225 6 T 300 6"
-                      stroke="#4a4d00"
-                      stroke-width="2.5"
-                      fill="none"
-                      stroke-linecap="round"></path>
-                  </svg>
-                </div>
-
-                <div class="flex items-start justify-between">
-                  <div class="flex-1">
-                    <h4 class="text-navy-900 font-semibold">
-                      Yogurt natural con miel de flor de la Janda y nueces
-                    </h4>
-                  </div>
-                  <span class="bg-navy-900 text-gold-300 px-3 py-1 text-lg font-bold">4.00€</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
