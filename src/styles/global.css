@@ -5,6 +5,16 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
+/* Force Aleo font for elegant class */
+.font-elegant {
+  font-family: 'Aleo', serif !important;
+}
+
+/* Apply Aleo font to highlighted text for contrast */
+strong {
+  font-family: 'Aleo', serif;
+}
+
 /* Focus styles for accessibility */
 *:focus {
   outline: 2px solid #8b4513;
