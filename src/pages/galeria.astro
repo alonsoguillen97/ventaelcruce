@@ -165,7 +165,7 @@ import Layout from '../layouts/Layout.astro';
     >
       <!-- Background image with elegant overlay -->
       <div
-        class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&h=1080&fit=crop')] bg-cover bg-center"
+        class="absolute inset-0 bg-[url('/images/hero/hero-1.jpg')] bg-cover bg-center"
       >
       </div>
       <div class="absolute inset-0 bg-linear-to-r from-black/85 via-black/50 to-black/20"></div>
@@ -202,25 +202,26 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="flex flex-wrap justify-center gap-4">
           <button
-            class="gallery-filter-btn active bg-gold-500 text-navy-900 hover:bg-navy-900 px-8 py-3 font-semibold tracking-wider uppercase transition-all duration-300 hover:scale-105 hover:text-white"
+            class="gallery-filter-btn active rounded-lg px-8 py-3 font-semibold tracking-wider uppercase transition-all duration-300 hover:scale-105"
+            style="background-color: #4a4d00; color: white;"
             data-filter="all"
           >
             Todo
           </button>
           <button
-            class="gallery-filter-btn bg-gold-100 text-navy-900 hover:bg-navy-900 px-8 py-3 font-semibold tracking-wider uppercase transition-all duration-300 hover:scale-105 hover:text-white"
+            class="gallery-filter-btn rounded-lg bg-gray-100 text-navy-900 px-8 py-3 font-semibold tracking-wider uppercase transition-all duration-300 hover:scale-105"
             data-filter="platos"
           >
             Nuestros Platos
           </button>
           <button
-            class="gallery-filter-btn bg-gold-100 text-navy-900 hover:bg-navy-900 px-8 py-3 font-semibold tracking-wider uppercase transition-all duration-300 hover:scale-105 hover:text-white"
+            class="gallery-filter-btn rounded-lg bg-gray-100 text-navy-900 px-8 py-3 font-semibold tracking-wider uppercase transition-all duration-300 hover:scale-105"
             data-filter="instalaciones"
           >
             Instalaciones
           </button>
           <button
-            class="gallery-filter-btn bg-gold-100 text-navy-900 hover:bg-navy-900 px-8 py-3 font-semibold tracking-wider uppercase transition-all duration-300 hover:scale-105 hover:text-white"
+            class="gallery-filter-btn rounded-lg bg-gray-100 text-navy-900 px-8 py-3 font-semibold tracking-wider uppercase transition-all duration-300 hover:scale-105"
             data-filter="ambiente"
           >
             Ambiente
@@ -240,7 +241,7 @@ import Layout from '../layouts/Layout.astro';
             data-category="platos"
           >
             <Image
-              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=600&h=800&fit=crop"
+              src="/images/galeria/P1001690.JPG"
               alt="Ensalada Gourmet"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               width={600}
@@ -252,8 +253,8 @@ import Layout from '../layouts/Layout.astro';
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="mb-2 text-xl font-bold">Ensaladas Frescas</h3>
-                <p class="text-sm">Ingredientes de temporada</p>
+                <h3 class="mb-2 text-xl font-bold">Nuestros Platos</h3>
+                <p class="text-sm">Cocina tradicional andaluza</p>
               </div>
             </div>
           </div>
@@ -263,7 +264,7 @@ import Layout from '../layouts/Layout.astro';
             data-category="platos"
           >
             <Image
-              src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=600&h=800&fit=crop"
+              src="/images/galeria/P1001694.JPG"
               alt="Hamburguesa Artesanal"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               width={600}
@@ -275,8 +276,8 @@ import Layout from '../layouts/Layout.astro';
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="mb-2 text-xl font-bold">Hamburguesas Gourmet</h3>
-                <p class="text-sm">Carne premium y pan artesano</p>
+                <h3 class="mb-2 text-xl font-bold">Especialidades</h3>
+                <p class="text-sm">Elaboradas con productos locales</p>
               </div>
             </div>
           </div>
@@ -286,7 +287,7 @@ import Layout from '../layouts/Layout.astro';
             data-category="instalaciones"
           >
             <Image
-              src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600&h=800&fit=crop"
+              src="/images/galeria/P1001710.JPG"
               alt="La Barra Principal"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               width={600}
@@ -298,8 +299,8 @@ import Layout from '../layouts/Layout.astro';
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="mb-2 text-xl font-bold">La Barra Principal</h3>
-                <p class="text-sm">Corazón de nuestro restaurante</p>
+                <h3 class="mb-2 text-xl font-bold">Nuestras Instalaciones</h3>
+                <p class="text-sm">Espacios acogedores</p>
               </div>
             </div>
           </div>
@@ -309,7 +310,7 @@ import Layout from '../layouts/Layout.astro';
             data-category="platos"
           >
             <Image
-              src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&h=800&fit=crop"
+              src="/images/galeria/P1001712.JPG"
               alt="Bocadillo Gourmet"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               width={600}
@@ -321,8 +322,8 @@ import Layout from '../layouts/Layout.astro';
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="mb-2 text-xl font-bold">Bocadillos Artesanos</h3>
-                <p class="text-sm">Tradición en cada bocado</p>
+                <h3 class="mb-2 text-xl font-bold">Platos del Día</h3>
+                <p class="text-sm">Recetas de la casa</p>
               </div>
             </div>
           </div>
@@ -332,7 +333,7 @@ import Layout from '../layouts/Layout.astro';
             data-category="ambiente"
           >
             <Image
-              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&h=800&fit=crop"
+              src="/images/galeria/P1001713.JPG"
               alt="Salón Principal"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               width={600}
@@ -344,8 +345,8 @@ import Layout from '../layouts/Layout.astro';
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="mb-2 text-xl font-bold">Salón Principal</h3>
-                <p class="text-sm">Elegancia y comodidad</p>
+                <h3 class="mb-2 text-xl font-bold">Ambiente Familiar</h3>
+                <p class="text-sm">Espacios para disfrutar</p>
               </div>
             </div>
           </div>
@@ -355,7 +356,7 @@ import Layout from '../layouts/Layout.astro';
             data-category="platos"
           >
             <Image
-              src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=800&fit=crop"
+              src="/images/galeria/P1001715.JPG"
               alt="Plato Principal"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               width={600}
@@ -367,8 +368,8 @@ import Layout from '../layouts/Layout.astro';
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="mb-2 text-xl font-bold">Especialidades</h3>
-                <p class="text-sm">Platos únicos de nuestra cocina</p>
+                <h3 class="mb-2 text-xl font-bold">Gastronomía Local</h3>
+                <p class="text-sm">Sabores auténticos</p>
               </div>
             </div>
           </div>
@@ -378,7 +379,7 @@ import Layout from '../layouts/Layout.astro';
             data-category="instalaciones"
           >
             <Image
-              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=800&fit=crop"
+              src="/images/galeria/P1001735.JPG"
               alt="Cocina Profesional"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               width={600}
@@ -390,8 +391,8 @@ import Layout from '../layouts/Layout.astro';
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="mb-2 text-xl font-bold">Nuestra Cocina</h3>
-                <p class="text-sm">Donde nace la magia culinaria</p>
+                <h3 class="mb-2 text-xl font-bold">Nuestro Espacio</h3>
+                <p class="text-sm">Comodidad y tradición</p>
               </div>
             </div>
           </div>
@@ -401,7 +402,7 @@ import Layout from '../layouts/Layout.astro';
             data-category="platos"
           >
             <Image
-              src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&h=800&fit=crop"
+              src="/images/galeria/P1001750.JPG"
               alt="Desayuno Especial"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               width={600}
@@ -413,8 +414,8 @@ import Layout from '../layouts/Layout.astro';
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="mb-2 text-xl font-bold">Desayunos</h3>
-                <p class="text-sm">El mejor comienzo del día</p>
+                <h3 class="mb-2 text-xl font-bold">Comida Casera</h3>
+                <p class="text-sm">Sabor de siempre</p>
               </div>
             </div>
           </div>
@@ -424,7 +425,7 @@ import Layout from '../layouts/Layout.astro';
             data-category="ambiente"
           >
             <Image
-              src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=600&h=800&fit=crop"
+              src="/images/galeria/P1001755.JPG"
               alt="Zona Privada"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               width={600}
@@ -436,8 +437,8 @@ import Layout from '../layouts/Layout.astro';
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="mb-2 text-xl font-bold">Zona Privada</h3>
-                <p class="text-sm">Intimidad para ocasiones especiales</p>
+                <h3 class="mb-2 text-xl font-bold">Nuestro Local</h3>
+                <p class="text-sm">Un lugar acogedor</p>
               </div>
             </div>
           </div>
@@ -447,7 +448,7 @@ import Layout from '../layouts/Layout.astro';
             data-category="platos"
           >
             <Image
-              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=800&fit=crop"
+              src="/images/galeria/P1001765.JPG"
               alt="Cena Romántica"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               width={600}
@@ -459,8 +460,8 @@ import Layout from '../layouts/Layout.astro';
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="mb-2 text-xl font-bold">Cenas Especiales</h3>
-                <p class="text-sm">Momentos únicos</p>
+                <h3 class="mb-2 text-xl font-bold">Nuestra Carta</h3>
+                <p class="text-sm">Variedad de platos</p>
               </div>
             </div>
           </div>
@@ -470,7 +471,7 @@ import Layout from '../layouts/Layout.astro';
             data-category="instalaciones"
           >
             <Image
-              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=800&fit=crop"
+              src="/images/galeria/P1001770.JPG"
               alt="Bodega"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               width={600}
@@ -482,8 +483,8 @@ import Layout from '../layouts/Layout.astro';
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="mb-2 text-xl font-bold">Bodega</h3>
-                <p class="text-sm">Selección de vinos excepcionales</p>
+                <h3 class="mb-2 text-xl font-bold">Nuestras Instalaciones</h3>
+                <p class="text-sm">Detalles que marcan la diferencia</p>
               </div>
             </div>
           </div>
@@ -493,7 +494,7 @@ import Layout from '../layouts/Layout.astro';
             data-category="ambiente"
           >
             <Image
-              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=800&fit=crop"
+              src="/images/galeria/P1001777.JPG"
               alt="Terraza"
               class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               width={600}
@@ -505,8 +506,8 @@ import Layout from '../layouts/Layout.astro';
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
               <div class="absolute bottom-6 left-6 text-white">
-                <h3 class="mb-2 text-xl font-bold">Terraza</h3>
-                <p class="text-sm">Disfruta al aire libre</p>
+                <h3 class="mb-2 text-xl font-bold">El Ambiente</h3>
+                <p class="text-sm">Donde te sentirás como en casa</p>
               </div>
             </div>
           </div>
@@ -559,46 +560,52 @@ import Layout from '../layouts/Layout.astro';
   </div>
 
   <!-- Footer - Final Gray Background -->
-  <footer style="background-color: #2B2B2B;">
+  <footer style="background: linear-gradient(to bottom, #000000 0%, #2B2B2B 100%);">
     <div class="mx-auto max-w-6xl px-6 py-12 lg:px-8">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="space-y-4">
           <div>
-            <div class="mb-4 flex items-center space-x-3">
-              <div class="bg-gold-500 flex h-10 w-10 items-center justify-center">
-                <span class="text-navy-900 text-lg font-bold">VC</span>
-              </div>
-              <h3 class="font-elegant text-2xl font-bold tracking-wide text-white">
-                Venta El Cruce
-              </h3>
+            <div class="mb-4">
+              <Image
+                src="/Logo venta el cruce.png"
+                alt="Venta El Cruce - Capricho Andaluz"
+                class="h-16 w-auto"
+                width={200}
+                height={67}
+                loading="lazy"
+                format="webp"
+              />
             </div>
-            <div class="bg-gold-500 mb-4 h-1 w-12"></div>
-            <p class="text-base leading-relaxed text-white">
-              Una experiencia gastronómica única que combina tradición y calidad en cada plato desde
-              1952.
-            </p>
+            <p class="text-base leading-relaxed text-white">Que no se pierda la costumbre</p>
           </div>
           <div class="flex space-x-3">
             <a
-              href="#"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
               style="background-color: #3A3A3A;"
-              class="rounded px-3 py-2 text-sm text-white transition-all duration-300 hover:bg-gray-700"
+              class="flex items-center justify-center rounded p-3 text-white transition-all duration-300 hover:bg-gray-700"
+              title="Facebook"
             >
-              Facebook
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                ></path>
+              </svg>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/ventaelcruce.elcaprichoandaluz/"
+              target="_blank"
+              rel="noopener noreferrer"
               style="background-color: #3A3A3A;"
-              class="rounded px-3 py-2 text-sm text-white transition-all duration-300 hover:bg-gray-700"
+              class="flex items-center justify-center rounded p-3 text-white transition-all duration-300 hover:bg-gray-700"
+              title="Instagram"
             >
-              Instagram
-            </a>
-            <a
-              href="#"
-              style="background-color: #3A3A3A;"
-              class="rounded px-3 py-2 text-sm text-white transition-all duration-300 hover:bg-gray-700"
-            >
-              TripAdvisor
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                ></path>
+              </svg>
             </a>
           </div>
         </div>
@@ -608,13 +615,19 @@ import Layout from '../layouts/Layout.astro';
           <h4 class="font-elegant text-lg font-semibold text-white">Enlaces Rápidos</h4>
           <ul class="space-y-2">
             <li>
-              <a href="/#nosotros" class="hover:text-gold-300 flex items-center text-sm text-white">
+              <a
+                href="/#nosotros"
+                class="hover:text-gold-300 flex items-center text-sm text-white"
+              >
                 <div class="bg-gold-500 mr-3 h-1 w-1 rounded-full"></div>
                 <span>Sobre Nosotros</span>
               </a>
             </li>
             <li>
-              <a href="/#espacios" class="hover:text-gold-300 flex items-center text-sm text-white">
+              <a
+                href="/#espacios"
+                class="hover:text-gold-300 flex items-center text-sm text-white"
+              >
                 <div class="bg-gold-500 mr-3 h-1 w-1 rounded-full"></div>
                 <span>Espacios</span>
               </a>
@@ -632,7 +645,10 @@ import Layout from '../layouts/Layout.astro';
               </a>
             </li>
             <li>
-              <a href="/#contacto" class="hover:text-gold-300 flex items-center text-sm text-white">
+              <a
+                href="/#contacto"
+                class="hover:text-gold-300 flex items-center text-sm text-white"
+              >
                 <div class="bg-gold-500 mr-3 h-1 w-1 rounded-full"></div>
                 <span>Visítanos</span>
               </a>
@@ -651,18 +667,23 @@ import Layout from '../layouts/Layout.astro';
               <span>Cañada Ancha, 11150 Vejer de la Frontera, Cádiz</span>
             </div>
             <div class="text-sm text-white">
-              <span>Mar-Dom: 13:00-16:00 | 20:00-23:30</span>
+              <span>Miércoles - Domingo: 8:00 - 16:00</span>
+            </div>
+            <div class="text-sm text-white">
+              <span>Lunes - Martes: Cerrado</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="mt-8 border-t border-gray-700 pt-6">
-        <div class="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
+      <div class="mt-8 pt-6">
+        <div
+          class="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0"
+        >
           <div class="text-center text-white md:text-left">
             <p class="text-sm">
-              &copy; 2024 <span class="text-gold-300 font-semibold">Venta El Cruce</span>. Todos los
-              derechos reservados.
+              &copy; 2025 <span class="text-gold-300 font-semibold">Venta El Cruce</span>. Todos
+              los derechos reservados.
             </p>
           </div>
           <div
@@ -674,7 +695,7 @@ import Layout from '../layouts/Layout.astro';
               href="https://atlantecdigital.com/"
               target="_blank"
               rel="noopener noreferrer"
-              class="border-b border-white/40 pb-0.5 text-sm font-semibold text-white no-underline transition-colors duration-300 hover:border-gray-200 hover:text-gray-200"
+              class="text-sm font-bold text-white transition-opacity duration-300 hover:opacity-80"
             >
               Atlantec Digital
             </a>
@@ -712,13 +733,17 @@ import Layout from '../layouts/Layout.astro';
 
       // Update active button - remove active state from all buttons first
       filterBtns.forEach((b) => {
-        b.classList.remove('active', 'bg-gold-500');
-        b.classList.add('bg-gold-100');
+        b.classList.remove('active');
+        (b as HTMLElement).style.backgroundColor = '';
+        (b as HTMLElement).style.color = '';
+        b.classList.add('bg-gray-100', 'text-navy-900');
       });
 
       // Add active state to clicked button
-      btn.classList.add('active', 'bg-gold-500');
-      btn.classList.remove('bg-gold-100');
+      btn.classList.add('active');
+      (btn as HTMLElement).style.backgroundColor = '#4a4d00';
+      (btn as HTMLElement).style.color = 'white';
+      btn.classList.remove('bg-gray-100', 'text-navy-900');
 
       // Filter gallery items
       galleryItems.forEach((item) => {
@@ -953,13 +978,13 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .gallery-filter-btn.active {
-    background-color: #eab308 !important; /* gold-500 */
-    color: #0f172a !important; /* navy-900 */
+    background-color: #4a4d00 !important; /* verde oliva */
+    color: white !important;
   }
 
   .gallery-filter-btn.active:hover {
-    background-color: #ca8a04 !important; /* gold-600 - slightly darker gold */
-    color: #0f172a !important; /* navy-900 */
+    background-color: #3a3d00 !important; /* verde oliva oscuro */
+    color: white !important;
     transform: scale(1.05);
   }
 
